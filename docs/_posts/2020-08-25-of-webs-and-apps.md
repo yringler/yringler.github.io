@@ -20,8 +20,6 @@ That newer technology is flutter. Flutter on the web isn’t for traditional web
 
 Ultimately, flutter, like any denizen of the web, has to render to HTML, but with a key difference. In other frameworks, ultimately the developer is consciously dealing with HTML/CSS. In flutter it’s completely abstracted away into flutter’s [widget](https://flutter.dev/docs/resources/architectural-overview#widgets) system, empowering developers to fully break loose from the their text-centric chains.
 
-\_\_ATA.cmd.push(function() {\_\_ATA.initDynamicSlot({id: 'atatags-26942-184789',location: 310,formFactor: '001',label: {text: 'Advertisements',},creative: {reportAd: {text: 'Report this ad',},privacySettings: {text: 'Privacy',}}});});
-
 Flutter, and the [dart language](https://dart.dev/guides/language/language-tour) powering it, is built to create crazy awesome UI experiences. Like [Rive](https://rive.app/). Rive is a fully featured animation studio and more, which was rewritten in flutter. Could such a thing be done in HTML? Absolutely. But why? Why do we insist on pumping up old tech stacks when there are new, powerful, purpose built tools now available? We could toughen up a blade of grass and slay any problem with it. It’s time to wield a sword.
 
 (Well, now quite yet, because flutter web is still in beta, but you know what I mean.)

@@ -1,8 +1,6 @@
 Building an industrial pipe bookshelf
 =====================================
 
-[Yehuda Ringler](https://randomthoughtsofyehuda.wordpress.com/author/ybringler/ "Posts by Yehuda Ringler") [Uncategorized](https://randomthoughtsofyehuda.wordpress.com/category/uncategorized/) May 19, 2022May 19, 2022 7 Minutes
-
 My advice on putting up an industrial pipe shelving kit
 
 I’m not a professional or anything, so don’t take anything here too seriously. I just tried to write accurately what worked for me.
