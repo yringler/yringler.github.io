@@ -4,7 +4,7 @@ description: Personal blog and stuff
 baseurl: "yringler" # the subpath of your site, e.g. /blog
 
 # Build settings
-theme: minimal
+theme: minima
 plugins:
   - jekyll-feed
 
