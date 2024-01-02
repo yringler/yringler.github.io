@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: Random thoughts of me
 description: Personal blog and stuff
-#baseurl: "yringler" # the subpath of your site, e.g. /blog
+baseurl: "yringler" # the subpath of your site, e.g. /blog
 
 # Build settings
 theme: minima
