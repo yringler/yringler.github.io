@@ -1,8 +1,3 @@
-layout: post
-title: "Protecting our homes"
-date: YYYY-MM-DD hh:mm:ss -0000
-categories: CATEGORY-1 CATEGORY-2
-
 We want our homes to be safe. Many people suffice with a heavy door and a strong lock. But it isn’t always enough to fortify our homes. In our increasingly volatile world, it is wise to strengthen our selves, with firearms and the like. But even the most ardent believers in the importance of self defense don’t recommend removing your front door.
 
 The internet is good, bad, everywhere, and forever. Most people recognize the importance of restricting access to dangerous content on devices, even if they can’t be bothered to do anything about it. It is a challenge to set up filters on all of our family’s myriad devices, and there are often monthly fees attached. It has the potential to get confrontational, and even after all of that, it’s only for devices we know about.
