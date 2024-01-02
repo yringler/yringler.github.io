@@ -34,9 +34,7 @@ Materials
 *   _Carpenter Pencils_ – I like drawing a lot of lines on the wall to know what I’m doing.
 *   _6 inch level_
 
-**_A note about laser levels_**_:_ A laser level casts a straight line, but you want the support pipes to be straight up and down **|**, not a straight, diagonal line on the wall **/** . The simple ones have a spirit level attached (bubble in yellow liquid), and you have to manually make sure that the laser is, in fact, level, and pointing straight up to the ceiling. A self leveling laser level is more expensive, and really won’t make a noticeable difference when all is said and done, but it takes out some guesswork when you’re making your vertical lines. I didn’t use one, but I would have liked to.
-
-Advertisement
+**_A note about laser levels_**_:_ A laser level casts a straight line, but you want the support pipes to be straight up and down **\|**, not a straight, diagonal line on the wall **/** . The simple ones have a spirit level attached (bubble in yellow liquid), and you have to manually make sure that the laser is, in fact, level, and pointing straight up to the ceiling. A self leveling laser level is more expensive, and really won’t make a noticeable difference when all is said and done, but it takes out some guesswork when you’re making your vertical lines. I didn’t use one, but I would have liked to.
 
 With a manual laser, there is some wiggle room for you to fiddle with where it’s basically straight up. A self leveling laser takes out that variable. Less choice makes things easier. And if you want the line to be a little bit diagonal, I think most laser levels allow you to set the line a bit off.
 
