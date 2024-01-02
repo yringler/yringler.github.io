@@ -21,8 +21,6 @@ Most name-brand routers, such as [Google nest](https://support.google.com/google
 
 Another option is to get a dedicated device which is designed specifically to simplify internet management. An example would be one of the dedicated firewalls from [firewalla](https://firewalla.com/products/firewalla-purple-se). Firewalla sells a variety of devices, depending on how fast your connection is. There are no subscription fees, and [they are highly regarded](https://www.pcmag.com/reviews/firewalla).
 
-Advertisement
-
 A brief, simplified refresher on some networking hardware terms:
 
 *   A modem connects to the internet
