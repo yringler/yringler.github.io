@@ -12,5 +12,6 @@ Suddenly he finds himself dealing with negative emotions towards his problems an
 
 Apathy can be mistaken for strength, then struggle for weakness, until there is a strength which can be mistaken for apathy.
 
-A person who cares about nothing is never upset. When he begins to care and live, he is faced with a world of emotions which
-he never had to deal with, and has a new challenge: live within, and stay above. Be a part of the world, and maintain your connection to the eternal.
+A person who cares about nothing has nothing to be upset about. A person who doesn't care deeply about his Creator has no G-d to be upset with.
+When he begins to care and live, he is faced with a world of emotions which he never had to deal with, and has a new challenge: live within, and
+stay above. Be a part of the world, and maintain your connection to the eternal.
