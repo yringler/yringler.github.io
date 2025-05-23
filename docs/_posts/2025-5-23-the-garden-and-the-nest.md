@@ -18,4 +18,4 @@ The flowers still needy, I walk down the path.
 On my lips now a smile, even as the tree hits me  
 The love birds song tells me the treasure I have.
 
-[Two Israeli Embassy Employees](https://www.chabad.org/news/article_cdo/aid/6905068/jewish/Two-Israeli-Embassy-Employees-Murdered-in-Washington-DC.htm)
+[Two Israeli Embassy Employees](https://www.chabad.org/news/article_cdo/aid/6905068/jewish/Two-Israeli-Embassy-Employees-Murdered-in-Washington-DC.htm).
