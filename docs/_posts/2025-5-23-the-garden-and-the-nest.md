@@ -11,7 +11,7 @@ They sing of their dreams as they soared through the air.
 The spring is now over, the leaves falling streaming  
 The love birds are gone now, I know not to where.  
 The nest was not built, it stayed in their dreaming  
-A treasure the searched for, but never would share.  
+A treasure they searched for, but never would share.  
 
 The stones in my garden still bother me, trip me  
 The flowers still needy, I walk down the path.  
