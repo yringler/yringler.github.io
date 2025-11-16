@@ -1,6 +1,4 @@
-In what is found the greatness of man? In his understanding? That would leave the difference between man and beast to be a matter of degree. In fact, that would
-leave beast as our superior; for his level of understanding generously bequeaths him with food and shelter and good spirits, whereas for man their attainment,
-even in meager measure, is only with much toil and nurture.
+In what is found the greatness of man? In his understanding? That would leave the difference between man and beast to be a matter of degree. In fact, that would leave beast as our superior; his intellect is perfectly suited to his needs. The path to obtain them - or the cruel reality of his inability - is always clear.
 
 Unique to man is not-understanding - the ability to recognize a vastness which is not understood, and to be inspired by that awareness. The beast lives in his
 world, which consists entirely of what he perceives. Only man loses himself in the stars.
