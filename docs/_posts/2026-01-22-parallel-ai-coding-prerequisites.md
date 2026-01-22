@@ -84,10 +84,10 @@ The reward for clean architecture is no longer deferred. It's now.
 
 ## References
 
-[^1]: Simon Willison, "Embracing the parallel coding agent lifestyle," October 2025. https://simonwillison.net/2025/Oct/5/parallel-coding-agents/
+[^1]: Simon Willison, "Embracing the parallel coding agent lifestyle," October 2025. <a href="https://simonwillison.net/2025/Oct/5/parallel-coding-agents/">https://simonwillison.net/2025/Oct/5/parallel-coding-agents/</a>
 
-[^2]: Jesse Vincent, "How I'm using coding agents in September, 2025." https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/
+[^2]: Jesse Vincent, "How I'm using coding agents in September, 2025." <a href="https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/">https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/</a>
 
-[^3]: Claude Code for Product Managers, "Agents for Parallel Work." https://ccforpms.com/fundamentals/agents
+[^3]: Claude Code for Product Managers, "Agents for Parallel Work." <a href="https://ccforpms.com/fundamentals/agents">https://ccforpms.com/fundamentals/agents</a>
 
-[^4]: Turing Post, "State of AI Coding: Context, Trust, and Subagents," November 2025. https://www.turingpost.com/p/aisoftwarestack
+[^4]: Turing Post, "State of AI Coding: Context, Trust, and Subagents," November 2025. <a href="https://www.turingpost.com/p/aisoftwarestack">https://www.turingpost.com/p/aisoftwarestack</a>
