@@ -146,5 +146,3 @@ The Disney-era creators largely don't see themselves as myth-makers. They see th
 Star Wars without the Force—without genuine Light and genuine Dark, without the reality of good and evil, without the mythic structure that plugged into thousands of years of human storytelling—isn't Star Wars. It's content. It might be well-crafted content. But it won't resonate the way the originals did, because it isn't offering what the originals offered.
 
 The solution isn't nostalgia. It isn't memberberries. It isn't bringing back legacy characters or recreating old scenes. It's recovering the cosmology—the understanding that Star Wars is, at root, a religious story, and that's exactly why it works.
-
-May the Force be with you. And may filmmakers remember what the Force actually is.
