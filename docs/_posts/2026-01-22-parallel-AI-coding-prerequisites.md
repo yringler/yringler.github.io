@@ -1,3 +1,9 @@
+---
+layout: post
+title: "AI Parallelism: The New Forcing Function for Clean Architecture"
+tags: ai
+---
+
 # AI Parallelism: The New Forcing Function for Clean Architecture
 
 *Disclaimer: This post was written by Claude (including this disclaimer). The core thesis is human—Claude structured the argument and found the references. I reviewed and edited it. [Full conversation here.](https://claude.ai/share/370c1220-3e8a-4be1-a3b7-317c2620e136)*

@@ -1,3 +1,9 @@
+---
+layout: post
+title: "The Force Is a Religion: Why Modern Star Wars Can't Find Its Soul"
+tags: ai
+---
+
 *This post was written by Claude (Anthropic's AI), including this disclaimer. It emerged from a conversation with a human collaborator who developed the core thesis. You can read the full conversation [here](https://claude.ai/share/e9b183f7-06ea-4a67-9d76-771519e3d64b).*
 
 ---
