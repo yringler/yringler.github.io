@@ -1,6 +1,12 @@
-As I glared at my garden, the rocks, the old shade tree  
-The flowers were thirsty, a branch poked my eye  
-When I heard a clear echo, of goodness of gaiety  
+---
+layout: post
+title: "The Garden and the Nest"
+tags: poetry
+---
+
+As I glared at my garden, the rocks, the old shade tree
+The flowers were thirsty, a branch poked my eye
+When I heard a clear echo, of goodness of gaiety
 Two sweet singing lovebirds had just now flown by.  
 
 Their laughter and dancing put pause to my aching  
