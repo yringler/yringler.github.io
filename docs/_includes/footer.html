@@ -27,9 +27,9 @@
           <p>{{ site.description | escape }}</p>
         </div>
         <div class="footer-col">
-            Copyright © 2023 Yehuda Ringler. All rights reserved. The content on this site is produced and copyrighted by Yehuda Ringler.
+            Copyright © {{ 'now' | date: "%Y" }} Yehuda Ringler. All rights reserved. The content on this site is produced and copyrighted by Yehuda Ringler.
             If you enjoyed this post you may distribute it further, provided that you do not revise any part of it, you include this note,
-            and link to {{ site.url }}/{{ site.baseurl }}. If you wish to republish this article in a periodical, book, or website, please email yrappdev@gmail.com
+            and link to {{ site.url }}{{ site.baseurl }}. If you wish to republish this article in a periodical, book, or website, please email yrappdev@gmail.com
         </div>
       </div>
   
