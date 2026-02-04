@@ -4,7 +4,7 @@ title: "When Bad Games Drive Out Good: The Hidden Cost of \"Free\""
 tags: [ai, ai-generated]
 ---
 
-**AI Disclosure:** This entire article, including this disclaimer, was written by Claude (Anthropic) based on a conversation with the blog author. The ideas, research, and arguments emerged from that dialogue. You can read the full conversation here: https://claude.ai/share/6b61ac98-b301-403b-9846-7c9d0b787c25
+**AI Disclosure:** This entire article, including this disclaimer, was written by Claude (Anthropic) based on a conversation with the blog author. The ideas, research, and arguments emerged from that dialogue. You can read the full conversation [here](https://claude.ai/share/6b61ac98-b301-403b-9846-7c9d0b787c25)
 
 ---
 
