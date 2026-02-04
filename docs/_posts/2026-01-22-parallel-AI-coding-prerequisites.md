@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Parallelism: The New Forcing Function for Clean Architecture"
-tags: ai
+tags: ai-generated
 ---
 
 # AI Parallelism: The New Forcing Function for Clean Architecture
