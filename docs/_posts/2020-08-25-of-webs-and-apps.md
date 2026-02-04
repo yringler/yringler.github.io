@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Of Webs and Apps"
+tags: coding
+---
+
 [Flutter web](https://flutter.dev/web) is coming. It promises excellent run time performance, smooth animations, elegant interface design -but at what cost? Flutter web is not production ready yet, so we have to cut it some slack, but looking at some [basic demos](https://minikin.me/flutter-web-demo/#/) show the main JS file weighing in at around 1MB, or 300KB gzipped. This isn’t totally unworkable, and we can expect some improvement by the time it hits production (for example, %40 of the JS file isn’t run and should be optimized out), but this still puts flutter at to upper end of web frameworks in terms of file size. And this is just a relatively small demo.
 
 That does not mean that flutter web should be avoided.

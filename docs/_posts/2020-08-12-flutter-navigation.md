@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Flutter Navigation"
+tags: coding
+---
+
 # Flutter Navigation
 Nested navigators, where there are tabs, and one or more tabs have their own navigation independent of the others, are a rite of passage which all flutter developers must go through.
 

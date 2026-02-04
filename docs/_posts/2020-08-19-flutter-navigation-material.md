@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Flutter Navigation Material"
+tags: coding
+---
+
 To my great consternation, route transition animations broke after upgrading the app – when going from one section to another, the old one was visible behind the new one until the transition was finished, and it looked terrible. I could not think what could be the problem.
 
 Then, out of the blue (well, after [breaking my head on it](https://quoteinvestigator.com/2012/07/21/luck-hard-work/) for a while), it hit me – I didn’t have any [material](https://material.io/design/environment/surfaces.html#material-environment)!
