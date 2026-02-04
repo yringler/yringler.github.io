@@ -1,12 +1,42 @@
-theme: jekyll-theme-minimal
+# Site settings
 title: Random thoughts of me
-description: Personal blog and stuff
-#baseurl: "yringler" # the subpath of your site, e.g. /blog
+tagline: Personal blog about technology, philosophy, and life
+description: A personal blog exploring software development, AI, philosophy, and random musings by Yehuda Ringler
+author:
+  name: Yehuda Ringler
+  email: yrappdev@gmail.com
+  url: https://blog.yehudardevelopment.com
+
+# Site URLs
+url: "https://blog.yehudardevelopment.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Social links (for jekyll-seo-tag and footer)
+social:
+  name: Yehuda Ringler
+  links:
+    - https://github.com/yringler
+
+# Social media usernames (for minima theme)
+github_username: yringler
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Timezone
+timezone: America/New_York
+
+# Permalinks
+permalink: /:year/:month/:day/:title/
+
+# Minima theme settings
+minima:
+  skin: auto
+  date_format: "%b %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
