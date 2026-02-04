@@ -1,0 +1,29 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+<div class="tags-index">
+  {%- assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq | sort -%}
+
+  {%- if all_tags.size > 0 -%}
+    <p>Browse posts by tag:</p>
+
+    <ul class="tag-list">
+      {%- for tag in all_tags -%}
+        {%- if tag != "" -%}
+          {%- assign tag_posts = site.posts | where_exp: "post", "post.tags contains tag" -%}
+          <li>
+            <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="tag-link">
+              <span class="tag">{{ tag }}</span>
+              <span class="tag-count">({{ tag_posts.size }})</span>
+            </a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  {%- else -%}
+    <p>No tags found.</p>
+  {%- endif -%}
+</div>

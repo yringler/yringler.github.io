@@ -38,6 +38,11 @@ minima:
   skin: auto
   date_format: "%b %-d, %Y"
 
+# Header pages for navigation
+header_pages:
+  - about.markdown
+  - tags/index.html
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

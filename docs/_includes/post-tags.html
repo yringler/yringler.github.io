@@ -1,0 +1,10 @@
+{%- assign post_tags = include.post.tags | default: page.tags -%}
+{%- if post_tags -%}
+  <div class="post-tags">
+    {%- for tag in post_tags -%}
+      <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="tag-link">
+        <span class="tag">{{ tag }}</span>
+      </a>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
