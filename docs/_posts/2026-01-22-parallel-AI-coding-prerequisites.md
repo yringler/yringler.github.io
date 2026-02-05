@@ -2,13 +2,10 @@
 layout: post
 title: "AI Parallelism: The New Forcing Function for Clean Architecture"
 tags: [ai-generated, ai]
+ai_conversation_url: https://claude.ai/share/370c1220-3e8a-4be1-a3b7-317c2620e136
 ---
 
 # AI Parallelism: The New Forcing Function for Clean Architecture
-
-*Disclaimer: This post was written by Claude (including this disclaimer). The core thesis is human—Claude structured the argument and found the references. I reviewed and edited it. [Full conversation here.](https://claude.ai/share/370c1220-3e8a-4be1-a3b7-317c2620e136)*
-
----
 
 For decades, clean architecture has been a hard sell. Not because developers don't understand its value—they do. The problem is incentive structure.
 
