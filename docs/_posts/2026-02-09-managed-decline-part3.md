@@ -3,7 +3,7 @@ layout: post
 title: "Beyond Managed Decline: The Torah Framework for Human Flourishing - Part 3"
 series: managed-decline
 series_part: 3
-tags: [ai-generated]
+tags: [ai-generated, in-review]
 ai_conversation_url: /chats/social-security-israel-moshiach.html
 ---
 

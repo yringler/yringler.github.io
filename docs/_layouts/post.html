@@ -17,6 +17,9 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.tags contains "in-review" -%}
+      {%- include in-review-disclaimer.html -%}
+    {%- endif -%}
     {%- if page.ai_conversation_url -%}
       {%- include ai-disclaimer.html ai_conversation_url=page.ai_conversation_url -%}
     {%- endif -%}

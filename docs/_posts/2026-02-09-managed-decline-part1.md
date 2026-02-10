@@ -3,7 +3,7 @@ layout: post
 title: "The Illusion of Security: America's Institutional Decline and the Demographic Trap - Part 1"
 series: managed-decline
 series_part: 1
-tags: [ai-generated]
+tags: [ai-generated, in-review]
 ai_conversation_url: /chats/social-security-israel-moshiach.html
 ---
 
