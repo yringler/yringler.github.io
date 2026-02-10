@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: /tools/claude-chat-sanitizer.html
+permalink: /clean-chat.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +64,7 @@ permalink: /tools/claude-chat-sanitizer.html
             resize: vertical;
         }
 
-        textarea:focus {
+        textarea:focus, input[type="text"]:focus {
             outline: none;
             border-color: #3498db;
         }
@@ -262,8 +262,37 @@ permalink: /tools/claude-chat-sanitizer.html
         <div class="stats" id="stats"></div>
 
         <div class="input-section">
-            <label for="jsonInput">Paste Claude Export JSON:</label>
-            <textarea id="jsonInput" placeholder='Paste your exported Claude conversation JSON here...'></textarea>
+            <div style="padding: 15px; background: #f0f8ff; border-radius: 4px; border-left: 4px solid #3498db;">
+                <strong>Quick Method: Bookmarklet</strong>
+                <p style="margin: 10px 0; font-size: 14px;">Drag this link to your bookmarks bar, then click it while on any claude.ai conversation:</p>
+                <p style="margin: 10px 0;">
+                    <a href="javascript:(async()=>{const%20uuid=window.location.pathname.match(/\/chat\/([a-f0-9-]{36})/i);if(!uuid){alert('Not%20on%20a%20conversation%20page');return;}const%20r=await%20fetch('https://claude.ai/api/organizations');const%20orgs=await%20r.json();const%20orgId=orgs[0]?.uuid;if(!orgId){alert('Could%20not%20find%20org%20ID');return;}const%20url=`https://claude.ai/api/organizations/${orgId}/chat_conversations/${uuid[1]}?tree=True&rendering_mode=messages&render_all_tools=true&consistency=eventual`;const%20resp=await%20fetch(url);const%20data=await%20resp.json();await%20navigator.clipboard.writeText(JSON.stringify(data,null,2));alert('✓%20Conversation%20JSON%20copied%20to%20clipboard!');})();" 
+                       style="padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 4px; display: inline-block; font-weight: 600;">
+                        Get Claude Conversation JSON
+                    </a>
+                </p>
+                <p style="margin-top: 10px; font-size: 13px; color: #666;">
+                    Click while viewing any conversation. The JSON will be copied to your clipboard, ready to paste below.
+                </p>
+            </div>
+        </div>
+
+        <div style="border-top: 2px solid #e0e0e0; margin: 30px 0; padding-top: 30px;">
+            <p style="color: #7f8c8d; font-size: 14px; text-align: center; margin-bottom: 20px;">OR</p>
+        </div>
+
+        <div class="input-section">
+            <label for="jsonInput">Manual Method - Paste JSON Directly:</label>
+            <p style="color: #7f8c8d; font-size: 14px; margin-bottom: 10px;">
+                <strong>How to get the JSON manually:</strong><br>
+                1. Open your conversation in claude.ai<br>
+                2. Open browser DevTools (F12) → Network tab<br>
+                3. Refresh the page or click the conversation<br>
+                4. Look for a request to <code>chat_conversations/{uuid}</code> (for private) or <code>chat_snapshots</code> (for shared)<br>
+                5. Right-click the request → Copy → Copy Response<br>
+                6. Paste the JSON here
+            </p>
+            <textarea id="jsonInput" placeholder='Paste the JSON response here...'></textarea>
         </div>
 
         <div class="button-group">
@@ -323,15 +352,30 @@ permalink: /tools/claude-chat-sanitizer.html
 
                 // Extract messages from chat_messages array
                 if (conversationData.chat_messages && Array.isArray(conversationData.chat_messages)) {
-                    messages = conversationData.chat_messages.map((msg, idx) => ({
-                        index: idx,
-                        uuid: msg.uuid,
-                        text: msg.text || '',
-                        sender: msg.sender,
-                        excluded: false,
-                        edited: false,
-                        originalText: msg.text || ''
-                    }));
+                    messages = conversationData.chat_messages.map((msg, idx) => {
+                        // Extract text from content array
+                        let text = '';
+                        if (msg.content && Array.isArray(msg.content)) {
+                            text = msg.content
+                                .filter(block => block.type === 'text')
+                                .map(block => block.text)
+                                .join('\n\n');
+                        }
+                        // Fallback to text field if content is empty
+                        if (!text && msg.text) {
+                            text = msg.text;
+                        }
+                        
+                        return {
+                            index: idx,
+                            uuid: msg.uuid,
+                            text: text,
+                            sender: msg.sender,
+                            excluded: false,
+                            edited: false,
+                            originalText: text
+                        };
+                    });
                 } else {
                     throw new Error('Invalid conversation format');
                 }
