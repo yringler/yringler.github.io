@@ -59,3 +59,28 @@
     }
   }
 }
+
+// Series navigation
+.series-nav {
+  background-color: #f0f7ff;
+  border-left: 4px solid $brand-color;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 4px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $brand-color;
+    font-size: 1.1em;
+  }
+
+  ol {
+    margin-bottom: 0;
+    padding-left: 1.5em;
+
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+}
