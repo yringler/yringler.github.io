@@ -56,7 +56,11 @@ The server auto-rebuilds on file changes.
 layout: post
 title: "Your Post Title"
 tags: [tag1, tag2]
-ai_conversation_url: https://claude.ai/share/... # Optional: for AI-generated content
+ai_conversation_url: https://claude.ai/share/... # Optional: single conversation URL
+# OR for multiple conversations:
+# ai_conversation_url:
+#   - https://claude.ai/share/...
+#   - https://claude.ai/share/...
 ---
 
 Your content here...
@@ -90,11 +94,19 @@ permalink: /tags/tag-name/
 
 ### AI-Generated Content
 
-Posts with `ai_conversation_url` in front matter display a blue disclaimer box at the top:
+Posts with `ai_conversation_url` in front matter display a blue disclaimer box at the top. This field supports both single URLs and arrays of multiple URLs:
 
 ```yaml
+# Single conversation
 ai_conversation_url: https://claude.ai/share/conversation-id
+
+# Multiple conversations
+ai_conversation_url:
+  - https://claude.ai/share/conversation-id-1
+  - https://claude.ai/share/conversation-id-2
 ```
+
+When multiple URLs are provided, they're displayed as numbered links: [1], [2], etc.
 
 The disclaimer is automatically included via `_includes/ai-disclaimer.html` (see `_layouts/post.html:20-22`).
 
