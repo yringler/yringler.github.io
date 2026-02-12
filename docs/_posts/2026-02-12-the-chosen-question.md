@@ -2,6 +2,9 @@
 layout: post
 title: "The Chosen Question"
 tags: [ai-generated]
+ai_conversation_url:
+  - https://claude.ai/share/93791a24-2394-4b7c-ae4f-9fdc06a7eb5a
+  - https://claude.ai/share/6d5927d3-34de-47b9-828d-565c1df5e307
 ---
 
 ### A Street Interview
