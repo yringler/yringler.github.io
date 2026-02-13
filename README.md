@@ -5,17 +5,6 @@
 ### Prerequisites
 - [Hugo](https://gohugo.io/installation/) (extended edition)
 
-### Setup
-Clone with submodules (for the PaperMod theme):
-```bash
-git clone --recurse-submodules https://github.com/yringler/yringler.github.io.git
-```
-
-If you already cloned without submodules:
-```bash
-git submodule update --init --recursive
-```
-
 ### Running the Development Server
 ```bash
 hugo server
