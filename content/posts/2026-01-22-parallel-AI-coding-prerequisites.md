@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-01-22T00:00:00-05:00
 slug: "parallel-AI-coding-prerequisites"
 title: "AI Parallelism: The New Forcing Function for Clean Architecture"
@@ -8,9 +8,9 @@ ai_conversation_url: https://claude.ai/share/370c1220-3e8a-4be1-a3b7-317c2620e13
 
 # AI Parallelism: The New Forcing Function for Clean Architecture
 
-For decades, clean architecture has been a hard sell. Not because developers don't understand its valueâ€”they do. The problem is incentive structure.
+For decades, clean architecture has been a hard sell. Not because developers don't understand its value—they do. The problem is incentive structure.
 
-Good architecture is a deferred investment. You pay the cost now (more files, more interfaces, more ceremony) for benefits that materialize later: maintainability, testability, onboarding speed. But "later" is abstract. The immediate reward for stuffing logic into one class was realâ€”less context switching, faster to write, everything in view.
+Good architecture is a deferred investment. You pay the cost now (more files, more interfaces, more ceremony) for benefits that materialize later: maintainability, testability, onboarding speed. But "later" is abstract. The immediate reward for stuffing logic into one class was real—less context switching, faster to write, everything in view.
 
 Human brains are single-threaded. We start a task, we complete it, we move to the next. Or we interrupt, context-switch, lose state, and thrash. Given this constraint, there was no penalty for coupling. You couldn't work on the auth module and billing module simultaneously anyway. The tangled dependency between them cost you nothing *today*.
 
@@ -18,7 +18,7 @@ That calculus just changed.
 
 ## The New Economics
 
-AI coding agents have introduced something genuinely new: the ability to parallelize development work. Not in the abstract sense of "a team can work on multiple things"â€”that always existed. But in the concrete sense of *one developer* running multiple agents on different parts of a codebase simultaneously.
+AI coding agents have introduced something genuinely new: the ability to parallelize development work. Not in the abstract sense of "a team can work on multiple things"—that always existed. But in the concrete sense of *one developer* running multiple agents on different parts of a codebase simultaneously.
 
 Simon Willison, describing his adoption of this workflow: "I can only focus on reviewing and landing one significant change at a time, but I'm finding an increasing number of tasks that can still be fired off in parallel without adding too much cognitive overhead to my primary work."[^1]
 
@@ -34,13 +34,13 @@ Coupling now has an immediate cost. Not a theoretical future cost when some juni
 
 The parallel agent community has converged on git worktrees as the solution. Each agent gets its own working directory, its own branch, and complete filesystem isolation.
 
-Jesse Vincent, who developed an elaborate multi-agent workflow: "I find myself frequently running 3-4 parallel projects on a single codebase."[^2] His system works because he enforces strict isolation through git worktreesâ€”each agent operates in a completely separate working directory.
+Jesse Vincent, who developed an elaborate multi-agent workflow: "I find myself frequently running 3-4 parallel projects on a single codebase."[^2] His system works because he enforces strict isolation through git worktrees—each agent operates in a completely separate working directory.
 
 But here's what the worktree evangelists often leave implicit: **physical isolation only helps if the code isn't logically bound together.**
 
 You can have three agents in three worktrees. But if all three need to modify the same tangled service class because it handles auth, billing, *and* notifications, you haven't parallelized anything. You've just deferred the merge conflict.
 
-The guidance for parallel agents assumes this: "Don't create agents that need to communicateâ€”they work independently."[^3] That's not just advice about agent architecture. It's a constraint on *code* architecture. If your code requires coordination to modify, your agents will require coordination too.
+The guidance for parallel agents assumes this: "Don't create agents that need to communicate—they work independently."[^3] That's not just advice about agent architecture. It's a constraint on *code* architecture. If your code requires coordination to modify, your agents will require coordination too.
 
 Worktrees solve the filesystem problem. They don't solve the dependency problem. That's on you.
 
@@ -48,7 +48,7 @@ Worktrees solve the filesystem problem. They don't solve the dependency problem.
 
 What happens when architecture doesn't support parallelism? The agents collide.
 
-A Stanford study found something revealing: in greenfield projects (new apps, clean slate), AI drives massive gainsâ€”often boosting productivity by 30% to 40%. But in brownfield projects with existing technical debt, the gains evaporated or reversed.[^4]
+A Stanford study found something revealing: in greenfield projects (new apps, clean slate), AI drives massive gains—often boosting productivity by 30% to 40%. But in brownfield projects with existing technical debt, the gains evaporated or reversed.[^4]
 
 The clean codebase compounds. The messy one doesn't.
 
@@ -78,7 +78,7 @@ For decades, the argument for good architecture was: "trust me, it'll be worth i
 
 The new argument is simpler: "if your code is coupled, you can't run multiple agents on it, and you're leaving throughput on the table *today*."
 
-AI parallelism is a forcing function. Not the first oneâ€”CI/CD made "works on my machine" expensive, microservices emerged partly from Conway's Law, type systems made certain error classes immediately visible. Each of these shifted behavior by making good practices pay off sooner.
+AI parallelism is a forcing function. Not the first one—CI/CD made "works on my machine" expensive, microservices emerged partly from Conway's Law, type systems made certain error classes immediately visible. Each of these shifted behavior by making good practices pay off sooner.
 
 AI parallelism does the same thing for modularity. The developer who can decompose well gets multiplicative throughput. The one who can't is bottlenecked no matter how many agents they spin up.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-02-04T00:00:00-05:00
 slug: "when-bad-games-drive-out-good"
 title: "When Bad Games Drive Out Good: The Hidden Cost of \"Free\""
@@ -18,14 +18,14 @@ In 2009, Angry Birds was a revelation. You paid $0.99 once, and you owned a comp
 
 It made $200 million from 12 million purchases.
 
-Today, that business model is extinct on mobile. Not because it failedâ€”but because it succeeded *wrong*.
+Today, that business model is extinct on mobile. Not because it failed—but because it succeeded *wrong*.
 
 ### The Economics That Killed Quality
 
 By 2013, the industry discovered that 2% of users spending $50/month generates more revenue than 100% of users spending $1 once. The math was brutal and decisive:
 
-- **Premium model**: $0.99 Ã— 12 million users = $12 million
-- **Freemium model**: $50/month Ã— 240,000 "whales" (2% of users) = $12 million/month
+- **Premium model**: $0.99 × 12 million users = $12 million
+- **Freemium model**: $50/month × 240,000 "whales" (2% of users) = $12 million/month
 
 The entire design vocabulary shifted overnight:
 
@@ -59,7 +59,7 @@ A 2023 study published in ScienceDirect examined mobile gaming monetization thro
 
 Research on mobile gaming's impact on consumer identity found that players described how "mobile games have become of lesser quality" with "instant gratification games where monetization is imposed on you behind every corner."[^2]
 
-[^2]: MÃ¤ntymÃ¤ki, Matti, et al. "How monetization mechanisms in mobile games influence consumers' identity extensions." *Journal of Business Research*, 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9768720/
+[^2]: Mäntymäki, Matti, et al. "How monetization mechanisms in mobile games influence consumers' identity extensions." *Journal of Business Research*, 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9768720/
 
 The industry isn't hiding this. At game development conferences, presentations openly discuss tactics like:[^3]
 - Identifying and targeting "whales" (players who spend thousands)
@@ -85,13 +85,13 @@ This is a textbook example of what economists call **Gresham's Law**: "Bad money
 
 The principle was first observed in 16th century England when Henry VIII debased the coinage. People spent the low-quality coins and hoarded the pure ones. Eventually, only bad money circulated.
 
-But Gresham's Law has a critical caveat: it only works when something *forces* both currencies to be treated as equivalent. In Renaissance England, it was legal tender laws. In mobile gaming, it's the **zero-price effect**[^5]â€”a psychological phenomenon where items priced at exactly zero are perceived to have *greater* value than their actual worth, not just lower costâ€”combined with app store dynamics.
+But Gresham's Law has a critical caveat: it only works when something *forces* both currencies to be treated as equivalent. In Renaissance England, it was legal tender laws. In mobile gaming, it's the **zero-price effect**[^5]—a psychological phenomenon where items priced at exactly zero are perceived to have *greater* value than their actual worth, not just lower cost—combined with app store dynamics.
 
 **Bad games drove out good games because users were forced to treat "free" and "premium" as equivalent choices in the same marketplace.**
 
 [^4]: "Gresham's law." *Wikipedia*. https://en.wikipedia.org/wiki/Gresham's_law
 
-[^5]: The "zero-price effect" describes how people irrationally overvalue free items. When something is priced at $0, demand doesn't just increase proportionallyâ€”it spikes dramatically because "free" is perceived as having more value than the same item at even $0.01. See: Shampanier, Kristina, Nina Mazar, and Dan Ariely. "Zero as a Special Price: The True Value of Free Products." *Marketing Science* 26.6 (2007): 742-757. Also discussed in Tisa Vo, "The Zero-Price Effect and Its Impact on the Mobile Games Marketplace" (LinkedIn, 2015).
+[^5]: The "zero-price effect" describes how people irrationally overvalue free items. When something is priced at $0, demand doesn't just increase proportionally—it spikes dramatically because "free" is perceived as having more value than the same item at even $0.01. See: Shampanier, Kristina, Nina Mazar, and Dan Ariely. "Zero as a Special Price: The True Value of Free Products." *Marketing Science* 26.6 (2007): 742-757. Also discussed in Tisa Vo, "The Zero-Price Effect and Its Impact on the Mobile Games Marketplace" (LinkedIn, 2015).
 
 ## The Global Response (Or Lack Thereof)
 
@@ -107,15 +107,15 @@ But here's the problem: a 2023 study found the ban is largely ineffective.[^7] 8
 [^7]: Xiao, Leon Y. "Breaking Ban: Belgium's Ineffective Gambling Law Regulation of Video Game Loot Boxes." *Collabra: Psychology*, Volume 9, Issue 1, January 2023. https://online.ucpress.edu/collabra/article/9/1/57641/195100/Breaking-Ban-Belgium-s-Ineffective-Gambling-Law
 
 ### The Netherlands
-Initially banned loot boxes where prizes have market value and fined EA â‚¬500,000 per week for FIFA loot boxes.[^16] But in March 2022, the highest administrative court reversed course, ruling that these mechanics don't constitute gambling after all.[^17]
+Initially banned loot boxes where prizes have market value and fined EA €500,000 per week for FIFA loot boxes.[^16] But in March 2022, the highest administrative court reversed course, ruling that these mechanics don't constitute gambling after all.[^17]
 
-[^16]: "Penalty Charges Electronic Arts Inc. and Electronic Arts Swiss SÃ rl for Game Fifa." Kansspelautoriteit (Dutch Gaming Authority), October 29, 2020. https://kansspelautoriteit.nl/nieuws/2020/oktober/lasten-dwangsom/
+[^16]: "Penalty Charges Electronic Arts Inc. and Electronic Arts Swiss Sàrl for Game Fifa." Kansspelautoriteit (Dutch Gaming Authority), October 29, 2020. https://kansspelautoriteit.nl/nieuws/2020/oktober/lasten-dwangsom/
 
 [^17]: "The ultimate loot drop: the Netherlands is planning to ban loot boxes in video games." Clifford Chance, September 2022. https://www.cliffordchance.com/insights/resources/blogs/talking-tech/en/articles/2022/09/the-ultimate-loot-drop-the-netherlands-is-planning-to-ban-loot.html
 Also: Administrative Jurisdiction Division of the Council of State (Netherlands), March 2022 ruling on EA v. Kansspelautoriteit.
 
 ### China (Most Comprehensive)
-China has implemented strict regulations on gaming,[^8] though it's important to note these are enabled by China's authoritarian governmental structureâ€”the same lack of democratic freedoms that allows such comprehensive enforcement also raises serious human rights concerns. Traditional frameworks can provide direction and boundaries without requiring totalitarian control.
+China has implemented strict regulations on gaming,[^8] though it's important to note these are enabled by China's authoritarian governmental structure—the same lack of democratic freedoms that allows such comprehensive enforcement also raises serious human rights concerns. Traditional frameworks can provide direction and boundaries without requiring totalitarian control.
 
 The regulations include:
 - Minors limited to 90 minutes on weekdays, 3 hours on weekends
@@ -134,7 +134,7 @@ Also: "China Gaming Laws: An Overview of Regulations and Restrictions." China Le
 [^10]: "China's latest gaming crackdown: What's new and what it means for mobile's biggest game makers." PocketGamer.biz, January 2, 2024. https://www.pocketgamer.biz/chinas-latest-gaming-crackdown-whats-new-and-what-it-means-for-mobiles-biggest-players/
 
 ### United States and United Kingdom
-Both have resisted regulation, preferring "industry self-regulation"â€”which predictably means nothing changes.
+Both have resisted regulation, preferring "industry self-regulation"—which predictably means nothing changes.
 
 ## Historical Parallels: When Everyone Gets Stupider
 
@@ -156,15 +156,15 @@ Between 1960-1980, atmospheric lead from gasoline created mass low-level cogniti
 
 The terrifying part: **people didn't notice they were getting dumber.** They just lived in a society with lower reading comprehension (but books got simpler), shorter attention spans (but TV segments got shorter), and less complex political discourse (but nobody complained).
 
-When leaded gasoline was phased out, IQs gradually recoveredâ€”but nobody experienced it as "getting smarter." The baseline just shifted.
+When leaded gasoline was phased out, IQs gradually recovered—but nobody experienced it as "getting smarter." The baseline just shifted.
 
 ### The Fall of Literacy After Rome
 
 When Rome fell, literacy rates plummeted from perhaps 20-30% to under 1% in some regions. Within two generations, people forgot reading was ever a common skill. Successor kingdoms looked at Roman aqueducts and thought they were built by giants or through magic.[^12]
 
-[^12]: Ward-Perkins, Bryan. *The Fall of Rome and the End of Civilization*. Oxford University Press, 2005. The attribution of Roman structures to giants or supernatural forces is documented in various medieval texts and folklore, including Geoffrey of Monmouth's *Historia Regum Britanniae* and various Germanic legends about "giant's work" (German: *HÃ¼nenwerk*).
+[^12]: Ward-Perkins, Bryan. *The Fall of Rome and the End of Civilization*. Oxford University Press, 2005. The attribution of Roman structures to giants or supernatural forces is documented in various medieval texts and folklore, including Geoffrey of Monmouth's *Historia Regum Britanniae* and various Germanic legends about "giant's work" (German: *Hünenwerk*).
 
-The knowledge didn't "die"â€”it became unavailable, then incomprehensible, then forgotten.
+The knowledge didn't "die"—it became unavailable, then incomprehensible, then forgotten.
 
 ## The Difference: Death vs. Stupidity
 
@@ -188,7 +188,7 @@ In October 2024, *The Atlantic* published "The Elite College Students Who Can't 
 
 [^13]: Horowitch, Rose. "The Elite College Students Who Can't Read Books." *The Atlantic*, November 2024. https://www.theatlantic.com/magazine/archive/2024/11/the-elite-college-students-who-cant-read-books/679945/
 
-Nicholas Dames has taught Columbia University's Literature Humanitiesâ€”the required great-books courseâ€”since 1998. Over the past decade, students have become overwhelmed by the reading. His students now seem bewildered by the thought of finishing multiple books a semester.
+Nicholas Dames has taught Columbia University's Literature Humanities—the required great-books course—since 1998. Over the past decade, students have become overwhelmed by the reading. His students now seem bewildered by the thought of finishing multiple books a semester.
 
 Twenty years ago, Dames's classes had no problem engaging in sophisticated discussions of *Pride and Prejudice* one week and *Crime and Punishment* the next. Now students tell him the reading load feels impossible. "It's not just the frenetic pace; they struggle to attend to small details while keeping track of the overall plot."
 
@@ -199,7 +199,7 @@ The article interviewed 33 professors from elite universities. The majority repo
 
 **A sonnet. Fourteen lines.**
 
-These aren't remedial students. These are Columbia, Princeton, Georgetown, UVAâ€”students who scored in the 99th percentile on standardized tests, with perfect GPAs. The "best and brightest."
+These aren't remedial students. These are Columbia, Princeton, Georgetown, UVA—students who scored in the 99th percentile on standardized tests, with perfect GPAs. The "best and brightest."
 
 And they can't track a narrative across 300 pages.
 
@@ -216,19 +216,19 @@ The infrastructure is adapting to stupidity, making it permanent.
 
 ## It Always Comes Back to H.G. Wells
 
-In 1895, H.G. Wells published *The Time Machine*. The Time Traveller encounters the Eloiâ€”beautiful, childlike humans living 800,000 years in the future. They inhabit a garden paradise where all their needs are met.
+In 1895, H.G. Wells published *The Time Machine*. The Time Traveller encounters the Eloi—beautiful, childlike humans living 800,000 years in the future. They inhabit a garden paradise where all their needs are met.
 
-But they can't read the books in their own libraries. They have no industry, no art, no curiosity, no complex thought. They're *happy* in their stupidityâ€”playing, eating fruit, dancing.
+But they can't read the books in their own libraries. They have no industry, no art, no curiosity, no complex thought. They're *happy* in their stupidity—playing, eating fruit, dancing.
 
 Wells understood something most miss: evolution doesn't optimize for intelligence. It optimizes for survival and reproduction.
 
 If stupid-but-comfortable outcompetes smart-but-stressed in reproductive success, stupidity wins.
 
 The Eloi had:
-- All material needs met by an unknown system â†’ no need to think
-- No predators (they thought) â†’ no selection pressure for intelligence
-- Beautiful environment â†’ constant low-level pleasure
-- Abundant leisure â†’ no requirement to plan or struggle
+- All material needs met by an unknown system → no need to think
+- No predators (they thought) → no selection pressure for intelligence
+- Beautiful environment → constant low-level pleasure
+- Abundant leisure → no requirement to plan or struggle
 
 Within 800,000 years: devolved to the mental capacity of five-year-olds.
 
@@ -239,11 +239,11 @@ Wells needed 800,000 years for human cognitive decline.
 We might achieve it in 80.
 
 Consider the acceleration:[^14]
-- **1946-2000**: Television â†’ attention spans drop from hours to ~30 minutes
-- **2000-2007**: Internet â†’ drops to ~10 minutes
-- **2007-2016**: Smartphones â†’ drops to ~3 minutes
-- **2016-2023**: TikTok â†’ drops to ~8 seconds
-- **2024+**: AI-generated infinite scroll â†’ ?
+- **1946-2000**: Television → attention spans drop from hours to ~30 minutes
+- **2000-2007**: Internet → drops to ~10 minutes
+- **2007-2016**: Smartphones → drops to ~3 minutes
+- **2016-2023**: TikTok → drops to ~8 seconds
+- **2024+**: AI-generated infinite scroll → ?
 
 [^14]: Attention span decline estimates are based on multiple industry reports and studies, though comprehensive longitudinal data is limited. The 8-second figure is from Microsoft's 2015 attention span study. The general trend is documented in: Mark, Gloria, et al. "The cost of interrupted work: more speed and stress." *Proceedings of the SIGCHI conference on Human factors in computing systems* (2008). Also: "Attention span statistics: 2023 report." Cross River Therapy. Note that these figures represent general trends rather than precise measurements, as attention span varies greatly by context and activity.
 
@@ -251,7 +251,7 @@ Consider the acceleration:[^14]
 
 But Wells saw the full horror: The Eloi weren't just dumb. They were **livestock.**
 
-The Morlocksâ€”underground dwellers who maintained the machineryâ€”were *farming them*. The beautiful garden was a pen. The Eloi were kept fat, happy, and stupid... and then harvested.
+The Morlocks—underground dwellers who maintained the machinery—were *farming them*. The beautiful garden was a pen. The Eloi were kept fat, happy, and stupid... and then harvested.
 
 The contemporary parallel:
 
@@ -428,7 +428,7 @@ He takes the time machine forward again... and never returns.
 
 We're left with a question: What did he see?
 
-Did he find a future where humanity recovered its capacity for thought? Or did he witness the final degenerationâ€”a world of Eloi who had forgotten there was ever anything to recover?
+Did he find a future where humanity recovered its capacity for thought? Or did he witness the final degeneration—a world of Eloi who had forgotten there was ever anything to recover?
 
 ## We Are Those Eloi
 
@@ -438,7 +438,7 @@ The TikTok generation with 8-second attention spans.
 
 The adults who can't remember the last book they finished.
 
-We're surrounded by the accumulated wisdom of civilizationâ€”millions of books, centuries of knowledge, the fruits of countless minds greater than our own.
+We're surrounded by the accumulated wisdom of civilization—millions of books, centuries of knowledge, the fruits of countless minds greater than our own.
 
 And we're losing the ability to access any of it.
 
@@ -491,7 +491,7 @@ Then came:
 
 **But what if "arbitrary" religious restrictions weren't arbitrary at all?**
 
-What if they were **cultural antibodies**â€”developed over centuries, encoding wisdom we've forgotten how to articulate?
+What if they were **cultural antibodies**—developed over centuries, encoding wisdom we've forgotten how to articulate?
 
 ### Built-In Resistance Structures
 
@@ -626,7 +626,7 @@ Wells wasn't warning about the distant future.
 
 **He was warning about the mechanism:**
 
-Remove challenges â†’ Comfort increases â†’ Intelligence becomes costly â†’ Stupidity propagates â†’ The species devolves
+Remove challenges → Comfort increases → Intelligence becomes costly → Stupidity propagates → The species devolves
 
 The Eloi didn't choose stupidity. They inherited a system optimized for comfort. Their ancestors made the comfortable choice. And their children. And theirs.
 

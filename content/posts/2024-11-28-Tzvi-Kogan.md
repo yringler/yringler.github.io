@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2024-11-28T00:00:00-05:00
 slug: "Tzvi-Kogan"
 title: "Tzvi Kogan"

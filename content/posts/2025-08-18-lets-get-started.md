@@ -1,4 +1,4 @@
-﻿So-
+So-
 
 I have my big idea.
 
