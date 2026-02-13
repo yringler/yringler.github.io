@@ -92,7 +92,9 @@
   {{- with .Params.tags }}
   <div class="entry-tags">
     {{- range . }}
+    {{- if ne . "ai-generated" }}
     <a href="{{ absURL (printf "tags/%s/" (. | urlize)) }}">{{ . }}</a>
+    {{- end }}
     {{- end }}
   </div>
   {{- end }}
