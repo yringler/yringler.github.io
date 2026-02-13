@@ -1,3 +1,10 @@
+---
+date: 2024-01-29T00:00:00-05:00
+slug: "getting-real"
+title: "Getting Real"
+tags: []
+---
+
 The story is told of the young man who comes back home after meeting a prospective match. His mother asks
 him, "How was she?". The young man answers, "She wasn't so pretty, but that didn't bother me. And she didn't have the
 most fine character, but that also didn't bother me. She doesn't come from such a good family, but that didn't bother me..."

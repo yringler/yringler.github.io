@@ -1,4 +1,11 @@
-So – I _finally_ finished rewriting all the low level code for [my app](https://github.com/yringler/inside-app), and I’m quite proud of it, actually. It was a [big](https://github.com/yringler/inside-api) [deal](https://github.com/yringler/just_audio_service). And now it’s time for some [UI stuff](https://github.com/yringler/inside-app/pull/72)!
+---
+date: 2020-08-13T00:00:00-05:00
+slug: "not-so-fast"
+title: "Not So Fast"
+tags: [coding]
+---
+
+So – I _finally_ finished rewriting all the low level code for [my app](https://github.com/yringler/inside-app), and I'm quite proud of it, actually. It was a [big](https://github.com/yringler/inside-api) [deal](https://github.com/yringler/just_audio_service). And now it's time for some [UI stuff](https://github.com/yringler/inside-app/pull/72)!
 
 I cranked up my trusty ol’ [Visual Studio Code](https://code.visualstudio.com/), opened up my flutter app code, some [basic documentation](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html), and started coding furiously.
 
