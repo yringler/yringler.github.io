@@ -1,0 +1,68 @@
+baseURL = "https://blog.yehudardevelopment.com/"
+languageCode = "en-us"
+title = "Random thoughts of me"
+theme = "PaperMod"
+copyright = "Yehuda Ringler. All rights reserved."
+
+[params]
+  author = "Yehuda Ringler"
+  description = "Personal blog about technology, philosophy, and life"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  DateFormat = "Jan 2, 2006"
+  env = "production"
+
+  [params.homeInfoParams]
+    Title = "Random thoughts of me"
+    Content = "Personal blog about technology, philosophy, and life"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yringler"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/feed.xml"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:yrappdev@gmail.com"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  [permalinks.page]
+    posts = "/:year/:month/:day/:slug/"
+  [permalinks.section]
+    posts = "/:year/:month/:day/:slug/"
+
+[outputFormats]
+  [outputFormats.RSS]
+    baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.goldmark.extensions.footnote]
+
+buildDrafts = false
+
+[sitemap]
+  filename = "sitemap.xml"

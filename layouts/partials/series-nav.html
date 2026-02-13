@@ -1,0 +1,22 @@
+{{ with .Params.series }}
+  {{ $currentSeries := . }}
+  {{ $currentPage := $ }}
+  {{ $seriesPosts := where (where $.Site.RegularPages "Params.series" $currentSeries) "Section" "posts" }}
+  {{ $seriesPosts = sort $seriesPosts "Params.series_part" }}
+  {{ if gt (len $seriesPosts) 1 }}
+    <div class="series-nav">
+      <h4>Series: {{ $currentSeries | humanize | title }}</h4>
+      <ol>
+        {{ range $seriesPosts }}
+          <li>
+            {{ if eq .Permalink $currentPage.Permalink }}
+              <strong>{{ .Title }}</strong> (current)
+            {{ else }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ol>
+    </div>
+  {{ end }}
+{{ end }}

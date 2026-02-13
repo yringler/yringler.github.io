@@ -1,0 +1,64 @@
+/* AI Disclaimer */
+.ai-disclaimer {
+  padding: 1em;
+  margin-bottom: 2em;
+  border-left: 4px solid #4a90e2;
+  background-color: #f0f7ff;
+  border-radius: 4px;
+}
+
+.dark .ai-disclaimer {
+  background-color: #1a2a3a;
+  border-left-color: #5a9ae2;
+}
+
+.ai-disclaimer p {
+  margin: 0;
+}
+
+/* In-Review Disclaimer */
+.in-review-disclaimer {
+  padding: 1em;
+  margin-bottom: 2em;
+  border-left: 4px solid #ff9800;
+  background-color: #fff3e0;
+  border-radius: 4px;
+}
+
+.dark .in-review-disclaimer {
+  background-color: #3a2a1a;
+  border-left-color: #ffb74d;
+}
+
+.in-review-disclaimer p {
+  margin: 0;
+}
+
+/* Series Navigation */
+.series-nav {
+  background-color: #f0f7ff;
+  border-left: 4px solid var(--primary);
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 4px;
+}
+
+.dark .series-nav {
+  background-color: #1a2a3a;
+}
+
+.series-nav h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--primary);
+  font-size: 1.1em;
+}
+
+.series-nav ol {
+  margin-bottom: 0;
+  padding-left: 1.5em;
+}
+
+.series-nav ol li {
+  margin-bottom: 0.3em;
+}

@@ -1,45 +1,52 @@
 # Claude.md - Project Guide
 
-This is a personal Jekyll blog hosted on GitHub Pages at blog.yehudardevelopment.com.
+This is a personal Hugo blog hosted on GitHub Pages at blog.yehudardevelopment.com.
 
 ## Project Structure
 
 ```
 yringler.github.io/
-├── docs/                    # Jekyll site root
-│   ├── _config.yml         # Site configuration
-│   ├── _posts/             # Blog posts (Markdown files)
-│   ├── _layouts/           # Custom layouts (home, post, tag)
-│   ├── _includes/          # Reusable components (footer, post-tags, ai-disclaimer)
-│   ├── assets/             # Static assets (CSS, images)
-│   ├── tags/               # Tag pages (one file per tag)
-│   ├── chats/              # AI conversation transcripts
-│   ├── tools/              # Utility tools (Claude chat sanitizer)
-│   ├── Gemfile             # Ruby dependencies
-│   └── index.markdown      # Homepage
-├── index.html              # Root redirect
-└── README.md               # Setup and usage instructions
+├── hugo.toml                  # Site configuration
+├── content/
+│   ├── posts/                 # Blog posts (Markdown files)
+│   ├── chats/                 # AI conversation transcripts
+│   └── about.md               # About page
+├── layouts/
+│   ├── partials/
+│   │   ├── ai-disclaimer.html     # Blue disclaimer for AI-generated content
+│   │   ├── in-review-disclaimer.html  # Orange disclaimer for WIP content
+│   │   ├── series-nav.html        # Multi-part series navigation
+│   │   └── extend_footer.html     # Footer extension point
+│   ├── posts/
+│   │   └── single.html           # Post layout (injects disclaimers/series nav)
+│   └── 404.html
+├── static/
+│   ├── CNAME                  # Custom domain config
+│   ├── robots.txt             # SEO settings
+│   └── clean-chat.html        # Claude chat sanitizer tool
+├── assets/
+│   └── css/extended/
+│       └── custom.css         # Custom styles (disclaimers, series nav)
+├── themes/
+│   └── PaperMod/              # Theme (git submodule)
+├── .github/workflows/
+│   └── hugo.yml               # GitHub Actions deploy workflow
+└── CLAUDE.md
 ```
 
 ## Technology Stack
 
-- **Jekyll**: Static site generator (v4.3.2 compatible)
-- **Theme**: Minima (v2.5) with custom overrides
-- **Hosting**: GitHub Pages
-- **Ruby**: 2.7 or higher required
-- **Plugins**:
-  - jekyll-feed (RSS/Atom feeds)
-  - jekyll-seo-tag (SEO metadata)
-  - jekyll-sitemap (XML sitemap)
+- **Hugo**: Static site generator
+- **Theme**: PaperMod with custom layout overrides
+- **Hosting**: GitHub Pages (deployed via GitHub Actions)
+- **Deployment**: Automatic on push to `main` branch
 
 ## Running the Site Locally
 
-Always work from the `docs/` directory:
-
 ```bash
-cd docs
-bundle install              # First time setup
-bundle exec jekyll serve    # Start dev server at localhost:4000
+hugo server                    # Start dev server at localhost:1313
+hugo server -D                 # Include draft posts
+hugo server --buildFuture      # Include future-dated posts
 ```
 
 The server auto-rebuilds on file changes.
@@ -48,12 +55,12 @@ The server auto-rebuilds on file changes.
 
 ### Creating Blog Posts
 
-1. Create file in `docs/_posts/` with format: `YYYY-MM-DD-title-slug.md`
+1. Create file in `content/posts/` with format: `YYYY-MM-DD-title-slug.md`
 2. Use this front matter template:
 
 ```yaml
 ---
-layout: post
+date: 2024-01-15T00:00:00-05:00
 title: "Your Post Title"
 tags: [tag1, tag2]
 ai_conversation_url: https://claude.ai/share/... # Optional: single conversation URL
@@ -67,30 +74,19 @@ Your content here...
 ```
 
 **Important**:
-- Post filename date determines publication date (not front matter)
-- Posts dated in the future won't be published until that date
+- `date` field in front matter determines publication date
+- Posts dated in the future won't be published unless `--buildFuture` is used
 - Use hyphens in filename slugs, not underscores
 
 ### Tags System
 
-When adding a new tag to a post, create a corresponding tag page:
+Hugo auto-generates tag pages via taxonomies. No need to create individual tag page files.
 
-1. Create `docs/tags/tag-name.md`:
+- Tags index: `/tags/`
+- Individual tag pages: `/tags/tag-name/`
+- Just add tags to post front matter
 
-```yaml
----
-layout: tag
-title: "Tag: Tag Name"
-tag: tag-name
-permalink: /tags/tag-name/
----
-```
-
-2. Use lowercase, hyphenated tag identifiers
-3. Tag pages automatically list all posts with that tag
-4. The main tags index at `/tags/` auto-generates from existing tag pages
-
-**Existing tags**: ai, ai-generated, poetry, coding
+**Existing tags**: ai, ai-generated, poetry, coding, in-review
 
 ### AI-Generated Content
 
@@ -106,84 +102,81 @@ ai_conversation_url:
   - https://claude.ai/share/conversation-id-2
 ```
 
-When multiple URLs are provided, they're displayed as numbered links: [1], [2], etc.
+The disclaimer is rendered via `layouts/partials/ai-disclaimer.html`, injected by the custom `layouts/posts/single.html`.
 
-The disclaimer is automatically included via `_includes/ai-disclaimer.html` (see `_layouts/post.html:20-22`).
+### Series Support
+
+For multi-part posts, add `series` and `series_part` to front matter:
+
+```yaml
+---
+series: series-name
+series_part: 1
+---
+```
+
+A navigation box automatically appears showing all parts of the series.
 
 ## Site Configuration
 
-Key settings in `docs/_config.yml`:
+Key settings in `hugo.toml`:
 
 - **Title**: "Random thoughts of me"
 - **Author**: Yehuda Ringler
 - **URL**: https://blog.yehudardevelopment.com
-- **Timezone**: America/New_York
+- **Theme**: PaperMod (auto dark/light mode)
 - **Permalink format**: `/:year/:month/:day/:title/`
-- **Theme skin**: auto (respects user's dark/light mode preference)
 
-Navigation header includes:
-- About page
-- Tags index
+Navigation header: About, Tags
 
-## Custom Layouts & Includes
+## Custom Layouts
 
-### Layouts (`docs/_layouts/`)
-- `home.html`: Homepage post list
-- `post.html`: Individual post view (includes AI disclaimer logic)
-- `tag.html`: Tag archive pages
+### Post Layout (`layouts/posts/single.html`)
+Overrides PaperMod's default to inject:
+- In-review disclaimer (for posts tagged "in-review")
+- AI disclaimer (for posts with `ai_conversation_url`)
+- Series navigation (for posts with `series` param)
 
-### Includes (`docs/_includes/`)
-- `ai-disclaimer.html`: Blue disclaimer box for AI-generated content
-- `post-tags.html`: Tag badges displayed on posts
-- `footer.html`: Custom footer
-- `social.html`: Social media links
+### Partials (`layouts/partials/`)
+- `ai-disclaimer.html`: Blue box for AI-generated content transparency
+- `in-review-disclaimer.html`: Orange box for WIP content
+- `series-nav.html`: Navigation for multi-part series
+- `extend_footer.html`: PaperMod footer extension point
 
 ## Utilities
 
-### Claude Chat Sanitizer (`docs/tools/claude-chat-sanitizer.html`)
+### Claude Chat Sanitizer (`static/clean-chat.html`)
 
 Web tool for cleaning up Claude conversation exports. Accessible at `/clean-chat.html`.
-
-### Chats Directory (`docs/chats/`)
-
-Storage for AI conversation transcripts referenced in blog posts.
 
 ## Git Workflow
 
 - **Main branch**: `main` (deploy target)
-
-When committing:
-- Use descriptive commit messages
-- Include co-authorship when appropriate
-- Work in feature branches for complex changes
+- GitHub Actions automatically builds and deploys on push to `main`
 
 ## Writing Conventions
 
-Based on existing content:
-
-1. **Post titles**: Use descriptive, engaging titles (often questions or provocative statements)
+1. **Post titles**: Use descriptive, engaging titles
 2. **Content style**: Mix of technical, philosophical, and personal topics
-3. **Length**: Varies from short posts to long-form essays (2,000+ words)
-4. **Formatting**:
+3. **Formatting**:
    - Use headers for structure (##, ###)
-   - Include footnotes for citations (Jekyll supports automatic footnote numbering)
+   - Hugo supports footnotes natively via Goldmark (`[^1]`)
    - Use blockquotes for emphasis (>)
    - Bold for key terms (**term**)
-5. **AI collaboration**: Be transparent about AI involvement via disclaimer
+4. **AI collaboration**: Be transparent about AI involvement via disclaimer
 
 ## Common Tasks
 
 ### Add a new post
 ```bash
-cd docs/_posts
-# Create YYYY-MM-DD-title.md with proper front matter
-# If using new tags, create tag pages in docs/tags/
+# Create content/posts/YYYY-MM-DD-title.md with proper front matter
+# Tags are auto-generated, no need to create tag pages
 ```
 
 ### Update site config
 ```bash
-# Edit docs/_config.yml
-# Restart Jekyll server to see changes
+# Edit hugo.toml
+# Hugo server auto-reloads
 ```
 
 ### Deploy changes
@@ -191,33 +184,17 @@ cd docs/_posts
 git add .
 git commit -m "Description of changes"
 git push origin main
-# GitHub Pages auto-deploys from main branch
+# GitHub Actions auto-builds and deploys
 ```
-
-## Troubleshooting
-
-- **Posts not appearing**: Check filename date format and future date filtering
-- **Tags not working**: Ensure tag page exists in `docs/tags/` with exact tag name match
-- **Local build errors**: Run `bundle install` and ensure Ruby version 2.7+
-- **Styling issues**: Minima theme uses `docs/_sass/` for custom overrides
 
 ## Important Files to Preserve
 
-- `docs/_config.yml`: All site configuration
-- `docs/Gemfile`: Ruby dependencies (locked to GitHub Pages versions)
-- `docs/_layouts/post.html`: AI disclaimer integration
-- `docs/_includes/ai-disclaimer.html`: Transparency feature
-- `docs/CNAME`: Custom domain configuration
-- `docs/robots.txt`: SEO settings
-
-## Development Notes
-
-- Site uses GitHub Pages gem bundle for compatibility
-- Theme is Minima with custom layouts overriding defaults
-- Jekyll processes everything in `docs/` directory
-- `_site/` is auto-generated (gitignored)
-- Custom domain configured via CNAME
-- Site is Windows-compatible (includes Windows-specific gems)
+- `hugo.toml`: All site configuration
+- `layouts/posts/single.html`: AI disclaimer + series integration
+- `layouts/partials/ai-disclaimer.html`: Transparency feature
+- `static/CNAME`: Custom domain configuration
+- `.github/workflows/hugo.yml`: Deployment pipeline
+- `themes/PaperMod`: Theme submodule
 
 ## Contact & Metadata
 

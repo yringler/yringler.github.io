@@ -1,1 +1,0 @@
-Slowly migrating my father's blog from [blogspot](http://swaying-branches.blogspot.com/) to [github pages](https://swayingbranches.yehudardevelopment.com/).
