@@ -60,7 +60,8 @@ copyright = "Yehuda Ringler. All rights reserved."
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.goldmark.extensions.footnote]
+    [markup.goldmark.extensions]
+      footnote = true
 
 buildDrafts = false
 
