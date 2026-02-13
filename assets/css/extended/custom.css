@@ -38,7 +38,6 @@
 .ai-badge {
   background-color: #4a90e2;
   color: #fff;
-  font-size: 0.75em;
   padding: 0.15em 0.5em;
   border-radius: 3px;
   font-weight: 600;
@@ -48,6 +47,33 @@
 .dark .ai-badge {
   background-color: #5a9ae2;
   color: #1a1a2e;
+}
+
+/* Entry tags (list/index pages) */
+.entry-tags {
+  position: relative;
+  z-index: 1;
+  padding: 0 14px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 6px;
+}
+
+.entry-tags a {
+  display: inline-block;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  padding: 0.15em 0.6em;
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.entry-tags a:hover {
+  background-color: var(--primary);
+  color: var(--theme);
 }
 
 /* Series Navigation */
