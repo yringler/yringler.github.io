@@ -464,7 +464,7 @@
         function exportMarkdown() {
             const includedMessages = messages.filter(m => !m.excluded);
 
-            let markdown = `# Claude Conversation\n\n`;
+            let markdown = `## Claude Conversation\n\n`;
 
             includedMessages.forEach(msg => {
                 if (msg.sender === 'human') {
@@ -571,7 +571,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Claude Conversation</h1>
+        <h2>Claude Conversation</h2>
         ${includedMessages.map(msg => `
             <div class="message ${msg.sender}">
                 <div class="message-role">${msg.sender}</div>

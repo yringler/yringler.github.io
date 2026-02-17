@@ -2,7 +2,7 @@
 title: "When Justice Hits a Dead End: The Mary Fong Lau Case and America's Vehicular Homicide Problem"
 date: 2026-02-17T00:00:00-05:00
 tags: [ai-generated]
-ai_conversation_url: https://claude.ai/share/205dd8d0-6d01-4a8a-990a-e77fa5772224
+ai_conversation_url: /chats/guilty-plea-vs-no-contest.html
 ---
 
 On March 16, 2024, Mary Fong Lau drove her Mercedes SUV at 70 miles per hour—the wrong way down a residential San Francisco street. She killed an entire family: Diego Cardoso de Oliveira (40), his wife Matilde Moncada Ramos Pinto (38), and their two infant sons, ages one and two months. They were waiting for a bus to the zoo.
