@@ -58,6 +58,11 @@ copyright = "Yehuda Ringler. All rights reserved."
   path = "section-tool"
   description = "Tool to divide Hebrew text into sections"
 
+[[params.angularApps]]
+  name = "Claude copy"
+  path = "clean-chat.html"
+  description = "Copy and edit a claude chat"
+
 [taxonomies]
   tag = "tags"
 
