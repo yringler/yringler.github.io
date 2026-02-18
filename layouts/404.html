@@ -1,4 +1,18 @@
 {{ define "main" }}
+<script>
+  (function() {
+    var apps = ['planning-poker', 'section-tool'];
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length > 0 && apps.indexOf(segments[0]) !== -1) {
+      var appBase = '/' + segments[0] + '/';
+      var route = '/' + segments.slice(1).join('/');
+      window.location.replace(
+        appBase + '?__route=' + encodeURIComponent(route + window.location.search + window.location.hash)
+      );
+    }
+  })();
+</script>
+
 <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
