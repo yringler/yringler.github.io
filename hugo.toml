@@ -43,6 +43,21 @@ copyright = "Yehuda Ringler. All rights reserved."
   url = "/tags/"
   weight = 20
 
+[[menu.main]]
+  name = "Tools"
+  url = "/tools/"
+  weight = 30
+
+[[params.angularApps]]
+  name = "Planning Poker"
+  path = "planning-poker"
+  description = "Estimate story points with your team"
+
+[[params.angularApps]]
+  name = "Section Tool"
+  path = "section-tool"
+  description = "Tool to divide Hebrew text into sections"
+
 [taxonomies]
   tag = "tags"
 

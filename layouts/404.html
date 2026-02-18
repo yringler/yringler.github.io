@@ -1,7 +1,7 @@
 {{ define "main" }}
 <script>
   (function() {
-    var apps = ['planning-poker', 'section-tool'];
+    var apps = [{{ range $i, $app := .Site.Params.angularApps }}{{ if $i }}, {{ end }}'{{ $app.path }}'{{ end }}];
     var segments = window.location.pathname.split('/').filter(Boolean);
     if (segments.length > 0 && apps.indexOf(segments[0]) !== -1) {
       var appBase = '/' + segments[0] + '/';
