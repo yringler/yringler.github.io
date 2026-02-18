@@ -32,7 +32,7 @@ env:
   # │ Add one line per Angular app.                           │
   # └─────────────────────────────────────────────────────────┘
   ANGULAR_APPS: |
-    yringler/planning-poker|panning-poker|latest-build
+    yringler/planning-poker|planning-poker|latest-build
     yringler/section-tool|section-tool|latest-build
 
 jobs:
