@@ -48,6 +48,11 @@ copyright = "Yehuda Ringler. All rights reserved."
   url = "/tools/"
   weight = 30
 
+[[menu.main]]
+  name = "Shaar HaYichud"
+  url = "https://blog.yehudardevelopment.com/shaar-hayichud-sections"
+  weight = 40
+
 [[params.angularApps]]
   name = "Planning Poker"
   path = "planning-poker"
