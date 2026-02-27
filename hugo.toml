@@ -50,7 +50,7 @@ copyright = "Yehuda Ringler. All rights reserved."
 
 [[menu.main]]
   name = "Shaar HaYichud"
-  url = "https://blog.yehudardevelopment.com/shaar-hayichud-sections"
+  url = "https://shaarhayichudresources.com/"
   weight = 40
 
 [[params.angularApps]]
