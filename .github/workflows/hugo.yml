@@ -33,7 +33,6 @@ env:
   # └─────────────────────────────────────────────────────────┘
   ANGULAR_APPS: |
     yringler/planning-poker|planning-poker|latest-build
-    yringler/section-tool|section-tool|latest-build
 
 jobs:
   deploy:

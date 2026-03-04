@@ -60,7 +60,7 @@ copyright = "Yehuda Ringler. All rights reserved."
 
 [[params.angularApps]]
   name = "Section Tool"
-  path = "section-tool"
+  url = "https://tool.shaarhayichudresources.com"
   description = "Tool to divide Hebrew text into sections"
 
 [[params.angularApps]]
