@@ -55,7 +55,7 @@ copyright = "Yehuda Ringler. All rights reserved."
 
 [[params.angularApps]]
   name = "Planning Poker"
-  path = "planning-poker"
+  url = "https://poker.yehudardevelopment.com/"
   description = "Estimate story points with your team"
 
 [[params.angularApps]]
