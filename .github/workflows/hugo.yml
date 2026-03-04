@@ -1,10 +1,8 @@
-name: Deploy Blog + Angular Apps
+name: Deploy Blog
 
 on:
   push:
     branches: [main]
-  repository_dispatch:
-    types: [angular-app-updated]
   workflow_dispatch:
 
 permissions:
@@ -19,20 +17,6 @@ concurrency:
 defaults:
   run:
     shell: bash
-
-env:
-  # ┌─────────────────────────────────────────────────────────┐
-  # │ Register all Angular apps here.                         │
-  # │ Format: owner/repo|subpath|release-tag                  │
-  # │                                                         │
-  # │ - subpath: where the app is served (e.g., /app-one/)    │
-  # │ - release-tag: the tag name used in the Angular repo's  │
-  # │   release (typically 'latest-build')                    │
-  # │                                                         │
-  # │ Add one line per Angular app.                           │
-  # └─────────────────────────────────────────────────────────┘
-  ANGULAR_APPS: |
-    yringler/planning-poker|planning-poker|latest-build
 
 jobs:
   deploy:
@@ -49,105 +33,6 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-
-      # ── Fetch all Angular apps from their releases ──
-
-      - name: Fetch Angular app releases
-        id: fetch-apps
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.CROSS_REPO_PAT }}
-          script: |
-            const fs = require('fs');
-            const lines = process.env.ANGULAR_APPS.trim().split('\n').filter(l => l.trim());
-            const results = [];
-
-            for (const line of lines) {
-              const [repo, subpath, tag] = line.trim().split('|');
-              const [owner, repoName] = repo.split('/');
-              core.info(`Fetching ${repo} (tag: ${tag}) → /${subpath}/`);
-
-              try {
-                const release = await github.rest.repos.getReleaseByTag({
-                  owner, repo: repoName, tag
-                });
-
-                const asset = release.data.assets.find(a => a.name === 'angular-dist.tar.gz');
-                if (!asset) {
-                  core.warning(`${repo}: release '${tag}' exists but has no angular-dist.tar.gz asset`);
-                  results.push({ repo, subpath, tag, found: false });
-                  continue;
-                }
-
-                core.info(`${repo}: downloading asset (${asset.size} bytes, uploaded ${asset.updated_at})`);
-
-                const download = await github.rest.repos.getReleaseAsset({
-                  owner, repo: repoName,
-                  asset_id: asset.id,
-                  headers: { accept: 'application/octet-stream' }
-                });
-
-                const filename = `angular-${subpath}.tar.gz`;
-                fs.writeFileSync(filename, Buffer.from(download.data));
-                results.push({ repo, subpath, tag, found: true, filename });
-                core.info(`${repo}: ✅ downloaded`);
-              } catch (err) {
-                if (err.status === 404) {
-                  core.warning(`${repo}: no release found with tag '${tag}'`);
-                } else {
-                  core.warning(`${repo}: fetch failed — ${err.message}`);
-                }
-                results.push({ repo, subpath, tag, found: false });
-              }
-            }
-
-            fs.writeFileSync('angular-manifest.json', JSON.stringify(results, null, 2));
-            const needsBuild = results.filter(r => !r.found);
-            core.setOutput('needs_fallback', needsBuild.length > 0 ? 'true' : 'false');
-
-      # ── Extract downloaded releases ──
-
-      - name: Extract Angular apps from releases
-        run: |
-          MANIFEST=$(cat angular-manifest.json)
-          echo "$MANIFEST" | jq -c '.[] | select(.found == true)' | while read -r entry; do
-            SUBPATH=$(echo "$entry" | jq -r '.subpath')
-            FILENAME=$(echo "$entry" | jq -r '.filename')
-            REPO=$(echo "$entry" | jq -r '.repo')
-
-            echo "📦 Extracting ${REPO} → angular-output/${SUBPATH}/"
-            mkdir -p "angular-output/${SUBPATH}"
-            tar -xzf "${FILENAME}" -C "angular-output/${SUBPATH}"
-          done
-
-      # ── Fallback: build any apps that had no release ──
-
-      - name: Setup Node (fallback builds)
-        if: steps.fetch-apps.outputs.needs_fallback == 'true'
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Build missing Angular apps from source
-        if: steps.fetch-apps.outputs.needs_fallback == 'true'
-        run: |
-          MANIFEST=$(cat angular-manifest.json)
-          echo "$MANIFEST" | jq -c '.[] | select(.found == false)' | while read -r entry; do
-            REPO=$(echo "$entry" | jq -r '.repo')
-            SUBPATH=$(echo "$entry" | jq -r '.subpath')
-
-            echo "⚠️ Building ${REPO} from source → angular-output/${SUBPATH}/"
-            git clone "https://x-access-token:${{ secrets.CROSS_REPO_PAT }}@github.com/${REPO}.git" "src-${SUBPATH}"
-            cd "src-${SUBPATH}"
-            npm ci
-            npx ng build --configuration production --base-href "/${SUBPATH}/"
-            cd ..
-            mkdir -p "angular-output/${SUBPATH}"
-            # Angular 17+ outputs to dist/<project-name>/browser/
-            cp -r src-${SUBPATH}/dist/*/browser/* "angular-output/${SUBPATH}/"
-            rm -rf "src-${SUBPATH}"
-            echo "✅ Built ${REPO} from source"
-          done
 
       # ── Build Hugo ──
 
@@ -175,22 +60,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      # ── Combine and deploy ──
-
-      - name: Merge Angular apps into Hugo site
-        run: |
-          if [ -d angular-output ]; then
-            cp -r angular-output/* public/
-            echo "✅ Combined site structure:"
-            ls -la public/
-            for dir in angular-output/*/; do
-              name=$(basename "$dir")
-              echo "  /${name}/: $(ls public/${name}/ | wc -l) files"
-            done
-          else
-            echo "ℹ️ No Angular apps to merge"
-          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
