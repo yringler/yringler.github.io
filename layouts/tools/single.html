@@ -7,7 +7,7 @@
     <ul>
       {{ range .Site.Params.angularApps }}
       <li>
-        <a href="/{{ .path }}/">{{ .name }}</a>
+        <a href="{{ if .url }}{{ .url }}{{ else }}/{{ .path }}/{{ end }}">{{ .name }}</a>
         {{ with .description }} — {{ . }}{{ end }}
       </li>
       {{ end }}
