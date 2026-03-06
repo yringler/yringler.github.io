@@ -2,7 +2,9 @@
 date: 2026-03-06T00:00:00-05:00
 title: "From Sacred Text to Static Site: Building Sha'ar HaYichud Resources with AI"
 tags: [ai, coding, ai-generated]
-ai_conversation_url: https://claude.ai/share/22428a46-c5ef-4879-beda-2c1662ac45b7
+ai_conversation_url:
+  - https://claude.ai/share/22428a46-c5ef-4879-beda-2c1662ac45b7
+  - https://claude.ai/share/a926c2ab-40b5-40d0-a46f-9bffd44b4dc1
 ---
 
 There's a book I've wanted to share with the world for years. *Sha'ar HaYichud* (שַׁעַר הַיִּחוּד — "The Gate of Unity"), written by the Mitteler Rebbe, Rabbi DovBer Schneuri, is a foundational Chassidic text of remarkable depth. Years ago I went through the entire book and divided it into labeled sections and subsections — a structural layer I felt would make it significantly more accessible to readers. That work sat in my notes, half-forgotten, until a few weeks ago when something clicked and I decided to finally publish it.
