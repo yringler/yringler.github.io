@@ -2,9 +2,7 @@
 date: 2026-03-06T00:00:00-05:00
 title: "From Sacred Text to Static Site: Building Sha'ar HaYichud Resources with AI"
 tags: [ai, coding, ai-generated]
-ai_conversation_url:
-  - https://claude.ai/share/22428a46-c5ef-4879-beda-2c1662ac45b7
-  - https://claude.ai/share/a926c2ab-40b5-40d0-a46f-9bffd44b4dc1
+ai_conversation_url: https://claude.ai/share/22428a46-c5ef-4879-beda-2c1662ac45b7
 ---
 
 There's a book I've wanted to share with the world for years. *Sha'ar HaYichud* (שַׁעַר הַיִּחוּד — "The Gate of Unity"), written by the Mitteler Rebbe, Rabbi DovBer Schneuri, is a foundational Chassidic text of remarkable depth. Years ago I went through the entire book and divided it into labeled sections and subsections — a structural layer I felt would make it significantly more accessible to readers. That work sat in my notes, half-forgotten, until a few weeks ago when something clicked and I decided to finally publish it.
@@ -29,7 +27,7 @@ The source and section editor repos are on GitHub:
 
 With XML in hand, the next question was: how do I get this in front of people? My first answer was XSLT. If you're not familiar with it, XSLT is a declarative XML transformation language — powerful, but with a syntax that's genuinely intimidating. I had Claude generate the stylesheet, which is exactly the kind of task AI is perfect for: the logic is well-defined, the output is verifiable, and the alternative is spending an afternoon learning a niche spec. I added the XSL stylesheet and a small Node script to generate an index page, and the result was actually pretty nice — the XML transformed to readable HTML with chapter navigation and decent formatting. This lived in its own GitHub repository and got deployed to a subpath of my blog at [blog.yehudardevelopment.com](https://blog.yehudardevelopment.com/), via a GitHub Actions workflow that built the Angular editor and published the XSLT output to GitHub Pages.
 
-The workflow for getting the Angular app onto the blog felt genuinely creative to me: on every push to the editor repo, a GitHub Actions job created a release with the compiled build artifacts. That triggered a repository dispatch event to the blog repo, which ran its own workflow, looped through a configured list of external repos, pulled down the latest release artifacts, and dropped them into the right subpath. Complicated, but it worked well — and the separation was actually a feature. The Angular app only rebuilt when its own repo changed, not on every blog edit. The blog just pulled the latest release artifact, so there was natural caching baked into the architecture: two independent build pipelines, loosely coupled via GitHub releases.
+[The workflow for getting the Angular app onto the blog](https://claude.ai/share/a926c2ab-40b5-40d0-a46f-9bffd44b4dc1) felt genuinely creative to me: on every push to the editor repo, a GitHub Actions job created a release with the compiled build artifacts. That triggered a repository dispatch event to the blog repo, which ran its own workflow, looped through a configured list of external repos, pulled down the latest release artifacts, and dropped them into the right subpath. Complicated, but it worked well — and the separation was actually a feature. The Angular app only rebuilt when its own repo changed, not on every blog edit. The blog just pulled the latest release artifact, so there was natural caching baked into the architecture: two independent build pipelines, loosely coupled via GitHub releases.
 
 ---
 
