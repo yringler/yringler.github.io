@@ -3,6 +3,7 @@ title: "The Economics of Caring: Why Anthropic's Constraints Make a Better Produ
 date: 2026-03-07
 draft: false
 tags: ["ai", "ai-generated"]
+ai_conversation_url: https://claude.ai/share/73e91330-8dda-4550-8998-122117c611bd
 ---
 
 There's a common complaint about Claude: rate limits, outages during peak usage, pricing tiers that remind you this isn't free. I've hit all of them. And yet I think these friction points are actually evidence of something good.
