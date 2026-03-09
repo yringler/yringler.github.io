@@ -2,6 +2,7 @@
 date: 2026-03-09T00:00:00-05:00
 title: "The Translator's Dilemma: Why Hebrew Flows and English Breaks"
 tags: [ai-generated]
+ai_conversation_url: https://claude.ai/share/a87756d7-d8d3-40c3-9343-7b68911047c7
 ---
 
 When you translate Classical Hebrew texts into English, you hit a wall that has nothing to do with vocabulary or concepts. The wall is structural. The two languages think differently — not in some vague Sapir-Whorf way, but in a concrete, mechanical way that shapes how a reader processes every sentence.
