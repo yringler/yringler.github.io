@@ -6,6 +6,8 @@ tags: [ai-generated]
 
 # A Close Reading of the Dearborn Heights Mayor's Statement on the Temple Israel Attack
 
+![Mayor Mo Baydoun's statement on the Temple Israel attack](https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/651967424_18575299555052299_3379880654354937932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg1MTU5MTkyOTYyNTE1Nzk1Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=K2A9H6Dh0MYQ7kNvwGImTPq&_nc_oc=AdkQkLfzVR0JxmmwLhm3GAXAx0mqU9kk_QN-2OI_LZcoDK92tgnR4YsCBolGAn6Duco&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=M3sZ9CmJm07f-o88ymn1Fw&_nc_ss=8&oh=00_Afx2lXci3o2dBxdW9REsdMFI13FDQcD9_hlPffbK6kR-tg&oe=69BA122F)
+
 On March 12, 2026, Ayman Mohamad Ghazali — a 41-year-old naturalized U.S. citizen from Lebanon and resident of Dearborn Heights, Michigan — drove a truck loaded with explosives into Temple Israel in West Bloomfield Township, the largest Reform synagogue in the United States. He exited with a rifle and opened fire. Approximately 140 students and staff were inside, including young children in an early childhood center. Security guards engaged and killed him. The FBI is investigating it as "a targeted act of violence against the Jewish community."
 
 That evening, Dearborn Heights Mayor Mo Baydoun released a statement. It is worth reading carefully, because what it says — and what it doesn't say — is remarkable.
