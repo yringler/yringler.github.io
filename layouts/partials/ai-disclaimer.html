@@ -1,15 +1,19 @@
-{{ with .Params.ai_conversation_url }}
+{{ $hasUrl := isset .Params "ai_conversation_url" }}
+{{ $hasTag := in .Params.tags "ai-generated" }}
+{{ if or $hasUrl $hasTag }}
 <div class="ai-disclaimer">
   <p>
     <strong>AI Disclosure:</strong> This article was written by Claude (Anthropic's AI) based on a conversation with the blog author. The ideas, research, and arguments emerged from that dialogue.
-    {{- if reflect.IsSlice . }}
+    {{- with .Params.ai_conversation_url }}
+      {{- if reflect.IsSlice . }}
       You can read the full conversations here:
-      {{- range $i, $url := . }}
-        <a href="{{ $url }}">[{{ add $i 1 }}]</a>
-        {{- if not (eq $i (sub (len ($.Params.ai_conversation_url)) 1)) }}, {{ end }}
-      {{- end }}
-    {{- else }}
+        {{- range $i, $url := . }}
+          <a href="{{ $url }}">[{{ add $i 1 }}]</a>
+          {{- if not (eq $i (sub (len ($.Params.ai_conversation_url)) 1)) }}, {{ end }}
+        {{- end }}
+      {{- else }}
       You can read the full conversation <a href="{{ . }}">here</a>.
+      {{- end }}
     {{- end }}
   </p>
 </div>
