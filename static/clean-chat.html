@@ -246,6 +246,54 @@
         .success.visible {
             display: block;
         }
+
+        .artifact {
+            border: 1px solid #c8d8e8;
+            border-radius: 6px;
+            margin-top: 12px;
+            background: #f0f6fc;
+        }
+
+        .artifact.excluded {
+            opacity: 0.5;
+            background: #fff5f5;
+            border-color: #ffcccc;
+        }
+
+        .artifact-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            border-bottom: 1px solid #c8d8e8;
+            font-size: 13px;
+        }
+
+        .artifact.excluded .artifact-header {
+            border-bottom-color: #ffcccc;
+        }
+
+        .artifact-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .artifact-type {
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .artifact-content {
+            padding: 10px 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 200px;
+            overflow-y: auto;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
@@ -347,11 +395,22 @@
                 if (conversationData.chat_messages && Array.isArray(conversationData.chat_messages)) {
                     messages = conversationData.chat_messages.map((msg, idx) => {
                         let text = '';
+                        let artifacts = [];
                         if (msg.content && Array.isArray(msg.content)) {
                             text = msg.content
                                 .filter(block => block.type === 'text')
                                 .map(block => block.text)
                                 .join('\n\n');
+                            artifacts = msg.content
+                                .filter(block => block.type === 'tool_use' && block.name === 'artifacts')
+                                .map(block => ({
+                                    id: block.id,
+                                    title: block.input?.title || 'Untitled Artifact',
+                                    type: block.input?.type || '',
+                                    language: block.input?.language || '',
+                                    content: block.input?.content || '',
+                                    excluded: false
+                                }));
                         }
                         if (!text && msg.text) {
                             text = msg.text;
@@ -364,7 +423,8 @@
                             sender: msg.sender,
                             excluded: false,
                             edited: false,
-                            originalText: text
+                            originalText: text,
+                            artifacts: artifacts
                         };
                     });
                 } else {
@@ -378,6 +438,29 @@
             } catch (e) {
                 showError('Invalid JSON: ' + e.message);
             }
+        }
+
+        function renderArtifacts(msgIdx) {
+            const msg = messages[msgIdx];
+            if (!msg.artifacts || msg.artifacts.length === 0) return '';
+            return msg.artifacts.map((art, artIdx) => `
+                <div class="artifact ${art.excluded ? 'excluded' : ''}" id="artifact-${msgIdx}-${artIdx}">
+                    <div class="artifact-header">
+                        <span>
+                            <span class="artifact-title">${escapeHtml(art.title)}</span>
+                            <span class="artifact-type">${escapeHtml(art.language || art.type)}</span>
+                        </span>
+                        <label style="font-size: 13px; font-weight: normal; cursor: pointer; display: flex; align-items: center; gap: 5px; margin: 0;">
+                            <input type="checkbox"
+                                   ${art.excluded ? 'checked' : ''}
+                                   onchange="toggleArtifactExclude(${msgIdx}, ${artIdx})"
+                                   style="cursor: pointer;">
+                            Exclude
+                        </label>
+                    </div>
+                    <div class="artifact-content">${escapeHtml(art.content)}</div>
+                </div>
+            `).join('');
         }
 
         function renderMessages() {
@@ -399,6 +482,7 @@
                     <div class="message-content" id="content-${idx}">
                         ${escapeHtml(msg.text)}
                     </div>
+                    ${renderArtifacts(idx)}
                 </div>
             `).join('');
         }
@@ -406,6 +490,12 @@
         function toggleExclude(idx) {
             messages[idx].excluded = !messages[idx].excluded;
             document.getElementById(`msg-${idx}`).classList.toggle('excluded');
+            updateStats();
+        }
+
+        function toggleArtifactExclude(msgIdx, artIdx) {
+            messages[msgIdx].artifacts[artIdx].excluded = !messages[msgIdx].artifacts[artIdx].excluded;
+            document.getElementById(`artifact-${msgIdx}-${artIdx}`).classList.toggle('excluded');
             updateStats();
         }
 
@@ -449,6 +539,8 @@
             const excluded = messages.filter(m => m.excluded).length;
             const edited = messages.filter(m => m.edited).length;
             const included = total - excluded;
+            const totalArtifacts = messages.reduce((sum, m) => sum + (m.artifacts ? m.artifacts.length : 0), 0);
+            const excludedArtifacts = messages.reduce((sum, m) => sum + (m.artifacts ? m.artifacts.filter(a => a.excluded).length : 0), 0);
 
             const statsEl = document.getElementById('stats');
             statsEl.innerHTML = `
@@ -457,6 +549,7 @@
                 ${included} included |
                 ${excluded} excluded |
                 ${edited} edited
+                ${totalArtifacts > 0 ? ` | ${totalArtifacts - excludedArtifacts}/${totalArtifacts} artifacts included` : ''}
             `;
             statsEl.classList.add('visible');
         }
@@ -473,6 +566,13 @@
                     markdown += `\n\n`;
                 } else {
                     markdown += `${msg.text}\n\n`;
+                }
+                if (msg.artifacts) {
+                    msg.artifacts.filter(a => !a.excluded).forEach(art => {
+                        markdown += `**${art.title}**\n\n`;
+                        const fence = '```';
+                        markdown += `${fence}${art.language || ''}\n${art.content}\n${fence}\n\n`;
+                    });
                 }
             });
 
@@ -567,6 +667,27 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
+        .artifact {
+            border: 1px solid #c8d8e8;
+            border-radius: 6px;
+            margin-top: 12px;
+            background: #f0f6fc;
+        }
+        .artifact-header {
+            padding: 6px 12px;
+            border-bottom: 1px solid #c8d8e8;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .artifact-type { color: #7f8c8d; font-size: 12px; margin-left: 8px; font-weight: normal; }
+        .artifact-content {
+            padding: 10px 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
@@ -576,6 +697,11 @@
             <div class="message ${msg.sender}">
                 <div class="message-role">${msg.sender}</div>
                 <div class="message-content">${escapeHtml(msg.text)}</div>
+                ${(msg.artifacts || []).filter(a => !a.excluded).map(art => `
+                <div class="artifact">
+                    <div class="artifact-header">${escapeHtml(art.title)}<span class="artifact-type">${escapeHtml(art.language || art.type)}</span></div>
+                    <div class="artifact-content">${escapeHtml(art.content)}</div>
+                </div>`).join('')}
             </div>
         `).join('')}
     </div>
