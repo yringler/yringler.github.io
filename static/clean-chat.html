@@ -246,6 +246,54 @@
         .success.visible {
             display: block;
         }
+
+        .artifact {
+            border: 1px solid #c8d8e8;
+            border-radius: 6px;
+            margin-top: 12px;
+            background: #f0f6fc;
+        }
+
+        .artifact.excluded {
+            opacity: 0.5;
+            background: #fff5f5;
+            border-color: #ffcccc;
+        }
+
+        .artifact-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            border-bottom: 1px solid #c8d8e8;
+            font-size: 13px;
+        }
+
+        .artifact.excluded .artifact-header {
+            border-bottom-color: #ffcccc;
+        }
+
+        .artifact-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .artifact-type {
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .artifact-content {
+            padding: 10px 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 200px;
+            overflow-y: auto;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
@@ -306,6 +354,12 @@
             <div id="messagesList"></div>
         </div>
 
+        <div id="artifactSection" style="display: none; margin-top: 30px;">
+            <h2>Artifacts</h2>
+            <p style="color: #7f8c8d; font-size: 14px; margin: 8px 0 15px;">Deduplicated — showing the final version of each artifact.</p>
+            <div id="artifactList"></div>
+        </div>
+
         <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; color: #7f8c8d; font-size: 14px;">
             Made by Claude
         </div>
@@ -314,6 +368,7 @@
     <script>
         let conversationData = null;
         let messages = [];
+        let artifacts = []; // deduplicated, last version of each artifact ID
 
         function showError(msg) {
             const errorEl = document.getElementById('error');
@@ -356,7 +411,6 @@
                         if (!text && msg.text) {
                             text = msg.text;
                         }
-
                         return {
                             index: idx,
                             uuid: msg.uuid,
@@ -367,11 +421,32 @@
                             originalText: text
                         };
                     });
+
+                    // Collect artifacts across all messages, deduped by artifact input ID (last version wins)
+                    const artifactMap = new Map();
+                    conversationData.chat_messages.forEach(msg => {
+                        if (!msg.content || !Array.isArray(msg.content)) return;
+                        msg.content
+                            .filter(block => block.type === 'tool_use' && block.name === 'artifacts')
+                            .forEach(block => {
+                                const artId = block.input?.id || block.id;
+                                artifactMap.set(artId, {
+                                    id: artId,
+                                    title: block.input?.title || 'Untitled Artifact',
+                                    type: block.input?.type || '',
+                                    language: block.input?.language || '',
+                                    content: block.input?.content || '',
+                                    excluded: false
+                                });
+                            });
+                    });
+                    artifacts = Array.from(artifactMap.values());
                 } else {
                     throw new Error('Invalid conversation format');
                 }
 
                 renderMessages();
+                renderArtifactSection();
                 updateStats();
                 document.getElementById('messagesContainer').style.display = 'block';
 
@@ -403,9 +478,42 @@
             `).join('');
         }
 
+        function renderArtifactSection() {
+            const section = document.getElementById('artifactSection');
+            if (artifacts.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            section.style.display = 'block';
+            document.getElementById('artifactList').innerHTML = artifacts.map((art, idx) => `
+                <div class="artifact ${art.excluded ? 'excluded' : ''}" id="artifact-${idx}">
+                    <div class="artifact-header">
+                        <span>
+                            <span class="artifact-title">${escapeHtml(art.title)}</span>
+                            <span class="artifact-type">${escapeHtml(art.language || art.type)}</span>
+                        </span>
+                        <label style="font-size: 13px; font-weight: normal; cursor: pointer; display: flex; align-items: center; gap: 5px; margin: 0;">
+                            <input type="checkbox"
+                                   ${art.excluded ? 'checked' : ''}
+                                   onchange="toggleArtifactExclude(${idx})"
+                                   style="cursor: pointer;">
+                            Exclude
+                        </label>
+                    </div>
+                    <div class="artifact-content">${escapeHtml(art.content)}</div>
+                </div>
+            `).join('');
+        }
+
         function toggleExclude(idx) {
             messages[idx].excluded = !messages[idx].excluded;
             document.getElementById(`msg-${idx}`).classList.toggle('excluded');
+            updateStats();
+        }
+
+        function toggleArtifactExclude(idx) {
+            artifacts[idx].excluded = !artifacts[idx].excluded;
+            document.getElementById(`artifact-${idx}`).classList.toggle('excluded');
             updateStats();
         }
 
@@ -449,6 +557,7 @@
             const excluded = messages.filter(m => m.excluded).length;
             const edited = messages.filter(m => m.edited).length;
             const included = total - excluded;
+            const excludedArtifacts = artifacts.filter(a => a.excluded).length;
 
             const statsEl = document.getElementById('stats');
             statsEl.innerHTML = `
@@ -457,6 +566,7 @@
                 ${included} included |
                 ${excluded} excluded |
                 ${edited} edited
+                ${artifacts.length > 0 ? ` | ${artifacts.length - excludedArtifacts}/${artifacts.length} artifacts included` : ''}
             `;
             statsEl.classList.add('visible');
         }
@@ -475,6 +585,16 @@
                     markdown += `${msg.text}\n\n`;
                 }
             });
+
+            const includedArtifacts = artifacts.filter(a => !a.excluded);
+            if (includedArtifacts.length > 0) {
+                markdown += `---\n\n## Artifacts\n\n`;
+                includedArtifacts.forEach(art => {
+                    markdown += `### ${art.title}\n\n`;
+                    const fence = '```';
+                    markdown += `${fence}${art.language || ''}\n${art.content}\n${fence}\n\n`;
+                });
+            }
 
             const blob = new Blob([markdown], { type: 'text/markdown' });
             const url = URL.createObjectURL(blob);
@@ -567,6 +687,27 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
+        .artifact {
+            border: 1px solid #c8d8e8;
+            border-radius: 6px;
+            margin-top: 12px;
+            background: #f0f6fc;
+        }
+        .artifact-header {
+            padding: 6px 12px;
+            border-bottom: 1px solid #c8d8e8;
+            font-size: 13px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .artifact-type { color: #7f8c8d; font-size: 12px; margin-left: 8px; font-weight: normal; }
+        .artifact-content {
+            padding: 10px 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
@@ -578,6 +719,15 @@
                 <div class="message-content">${escapeHtml(msg.text)}</div>
             </div>
         `).join('')}
+        ${artifacts.filter(a => !a.excluded).length > 0 ? `
+        <hr style="margin: 30px 0; border: none; border-top: 2px solid #e0e0e0;">
+        <h2 style="margin-bottom: 20px; color: #2c3e50;">Artifacts</h2>
+        ${artifacts.filter(a => !a.excluded).map(art => `
+            <div class="artifact">
+                <div class="artifact-header">${escapeHtml(art.title)}<span class="artifact-type">${escapeHtml(art.language || art.type)}</span></div>
+                <div class="artifact-content">${escapeHtml(art.content)}</div>
+            </div>
+        `).join('')}` : ''}
     </div>
 </body>
 </html>`;
@@ -597,9 +747,11 @@
             if (confirm('Reset everything? This will clear all your edits.')) {
                 document.getElementById('jsonInput').value = '';
                 document.getElementById('messagesContainer').style.display = 'none';
+                document.getElementById('artifactSection').style.display = 'none';
                 document.getElementById('stats').classList.remove('visible');
                 conversationData = null;
                 messages = [];
+                artifacts = [];
             }
         }
 
