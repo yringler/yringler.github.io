@@ -5,7 +5,7 @@
   {{ $seriesPosts = sort $seriesPosts "Params.series_part" }}
   {{ if gt (len $seriesPosts) 1 }}
     <div class="series-nav">
-      <h4>Series: {{ $currentSeries | humanize | title }}</h4>
+      <h4>Series: {{ $currentSeries | replaceRE "-" " " | title }}</h4>
       <ol>
         {{ range $seriesPosts }}
           <li>
