@@ -1,6 +1,7 @@
 ---
 date: 2026-02-09T00:00:00-05:00
 slug: "managed-decline-part3"
+url: "/2026/02/09/managed-decline-part3/"
 title: "Beyond Managed Decline: The Torah Framework for Human Flourishing - Part 3"
 series: managed-decline
 series_part: 3

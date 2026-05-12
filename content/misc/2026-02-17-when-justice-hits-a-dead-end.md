@@ -1,6 +1,7 @@
 ---
 title: "When Justice Hits a Dead End: The Mary Fong Lau Case and America's Vehicular Homicide Problem"
 date: 2026-02-17T00:00:00-05:00
+url: "/2026/02/17/when-justice-hits-a-dead-end-the-mary-fong-lau-case-and-americas-vehicular-homicide-problem/"
 tags: [ai-generated]
 ai_conversation_url: /chats/guilty-plea-vs-no-contest.html
 ---

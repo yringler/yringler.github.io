@@ -18,6 +18,7 @@ copyright = "Yehuda Ringler. All rights reserved."
   ShowCodeCopyButtons = true
   DateFormat = "Jan 2, 2006"
   env = "production"
+  mainSections = ["posts"]
 
   [params.homeInfoParams]
     Title = "Random thoughts of me"
@@ -42,6 +43,11 @@ copyright = "Yehuda Ringler. All rights reserved."
   name = "Tags"
   url = "/tags/"
   weight = 20
+
+[[menu.main]]
+  name = "Misc"
+  url = "/misc/"
+  weight = 25
 
 [[menu.main]]
   name = "Tools"
