@@ -8,7 +8,7 @@ series: ai-coding-shift
 series_part: 1
 ---
 
-A few months ago I [wrote a post](/2026/01/22/parallel-AI-coding-prerequisites/) arguing that AI parallelism would force developers to take clean architecture seriously, because coupling now has an immediate cost in blocked parallel work. I still think that's true. But I want to start this series with a confession: the elaborate workflow I built on top of that insight is mostly not what I actually do anymore.
+A few months ago I [wrote a post](/2026/01/22/parallel-ai-coding-prerequisites/) arguing that AI parallelism would force developers to take clean architecture seriously, because coupling now has an immediate cost in blocked parallel work. I still think that's true. But I want to start this series with a confession: the elaborate workflow I built on top of that insight is mostly not what I actually do anymore.
 
 This isn't a retraction. The economic argument holds. What I got wrong was the workflow that I thought followed from it.
 

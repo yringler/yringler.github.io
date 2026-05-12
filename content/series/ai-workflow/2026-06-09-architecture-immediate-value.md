@@ -8,7 +8,7 @@ series: ai-coding-shift
 series_part: 4
 ---
 
-[Back in January](/2026/01/22/parallel-AI-coding-prerequisites/) I argued that AI parallelism turns clean architecture into a forcing function — coupling now has an immediate cost in blocked parallel work. After three more posts living inside this workflow, I want to come back to that argument and say what I think I underestimated. The economic shift is bigger than parallelism. AI has quietly collapsed a whole stack of tradeoffs that software engineering treated as fundamental, and the implications run further than "you can run more agents."
+[Back in January](/2026/01/22/parallel-ai-coding-prerequisites/) I argued that AI parallelism turns clean architecture into a forcing function — coupling now has an immediate cost in blocked parallel work. After three more posts living inside this workflow, I want to come back to that argument and say what I think I underestimated. The economic shift is bigger than parallelism. AI has quietly collapsed a whole stack of tradeoffs that software engineering treated as fundamental, and the implications run further than "you can run more agents."
 
 ## The Old Tradeoffs Were Human-Effort Tradeoffs
 
