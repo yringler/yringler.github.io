@@ -50,6 +50,11 @@ copyright = "Yehuda Ringler. All rights reserved."
   weight = 25
 
 [[menu.main]]
+  name = "Series"
+  url = "/series/"
+  weight = 27
+
+[[menu.main]]
   name = "Tools"
   url = "/tools/"
   weight = 30
