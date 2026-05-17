@@ -4,7 +4,6 @@ title: "The Sky Arena: Why Air Shows Are a Moral Anachronism We've Somehow Norma
 tags: [ai-generated]
 ai_conversation_url: https://claude.ai/share/4a0d001d-b58d-4a00-acf6-5bb4f009100a
 ---
-
 # The Sky Arena: Why Air Shows Are a Moral Anachronism We've Somehow Normalized
 
 *We banned gladiatorial combat. We reformed NASCAR until the deaths stopped. Air shows cannot be reformed — they can only be banned.*
@@ -73,7 +72,7 @@ If air shows were primarily associated with working-class culture — if they we
 
 But air shows are insulated by a particular kind of cultural prestige. The Blue Angels and Thunderbirds are government programs, funded by the Defense Department, explicitly designed to build public goodwill toward the military and serve as recruiting tools. Criticism of air shows brushes uncomfortably close to criticism of the armed forces. The pilots are framed not as workers being placed in unnecessary danger for entertainment, but as *heroes* — volunteers demonstrating American excellence. The crowds don't feel like they're watching someone risk death for their amusement. They feel like they're honoring service.
 
-This framing does real moral work. It suppresses exactly the kind of discomfort that would, in any other context, prompt the question: *should we be doing this?*
+This framing does real moral work. It suppresses exactly the kind of discomfort that would, in any other context, prompt the question: *should we be doing this?* You can eat your funnel cake and feel like a patriot. That is a powerful thing to be able to sell.
 
 ---
 
@@ -120,6 +119,8 @@ The NASCAR parallel closes the argument from the other direction. When NASCAR fa
 Air shows do not have a NASCAR solution. There is no HANS device coming, no SAFER barrier for the sky, no engineering path to zero deaths while keeping the performance. The activity is the danger. Which means the only honest response — the response our own moral framework already demands, as evidenced by what we've done with every comparable historical case — is to stop holding them.
 
 Ban the air shows. The sky will still be there. The pilots will still be able to fly. They just won't be doing it at 200 feet, inverted, in front of a crowd, with nowhere to go if something goes wrong.
+
+Future generations will look back at us the way we look back at Rome. They will ask how we sat in those stands, ate our funnel cake, watched a human being die for our Saturday afternoon entertainment, and went home without questioning it. The answer, when we try to give it, will sound exactly like every answer Rome ever gave.
 
 ---
 
