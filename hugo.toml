@@ -2,6 +2,7 @@ baseURL = "https://blog.yehudardevelopment.com/"
 languageCode = "en-us"
 title = "Random thoughts of me"
 copyright = "Yehuda Ringler. All rights reserved."
+buildFuture = true
 
 [module]
   [[module.imports]]
