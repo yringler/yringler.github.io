@@ -76,6 +76,61 @@
   color: var(--theme);
 }
 
+/* Section Cards (home page) */
+.section-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .section-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  padding: 1.1em 1.3em;
+  border-radius: 6px;
+  border-top: 3px solid var(--primary);
+  background-color: var(--code-bg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top-color: var(--secondary);
+}
+
+.dark .section-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.section-card-title {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.section-card-desc {
+  font-size: 0.9em;
+  color: var(--secondary);
+  line-height: 1.4;
+}
+
+.section-card-count {
+  font-size: 0.8em;
+  color: var(--secondary);
+  margin-top: auto;
+  padding-top: 0.4em;
+}
+
 /* Series Navigation */
 .series-nav {
   background-color: #f0f7ff;

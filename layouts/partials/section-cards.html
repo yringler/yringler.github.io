@@ -1,0 +1,14 @@
+{{- $sections := slice (site.GetPage "/misc") (site.GetPage "/series") }}
+<div class="section-cards">
+  {{- range $sections }}
+  {{- if . }}
+  <a class="section-card" href="{{ .Permalink }}">
+    <div class="section-card-title">{{ .Title }}</div>
+    {{- with .Description }}
+    <div class="section-card-desc">{{ . }}</div>
+    {{- end }}
+    <div class="section-card-count">{{ len .RegularPagesRecursive }} posts →</div>
+  </a>
+  {{- end }}
+  {{- end }}
+</div>
