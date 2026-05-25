@@ -19,8 +19,6 @@ A few weeks ago I went looking for something my kids could play classic games on
 
 For around $45, you can buy a handheld that plays essentially every Game Boy, GBA (Game Boy Advance), NES, SNES, Genesis, and PlayStation 1 game, on a bright screen with real controls, in something close to the size of the original Game Boy.
 
-Forty-five dollars. I had to sit with that for a minute.
-
 ---
 
 ## So What Are These Things?
@@ -35,11 +33,9 @@ The higher-end ones — around $250 — are where it gets genuinely hard to just
 
 ## The PS2 and GameCube Argument Nobody Talks About
 
-Here's the part that should give a prospective Switch 2 buyer pause.
+A ~$249 Retroid Pocket 6 runs PlayStation 2 and GameCube, and at native resolution it runs them comfortably. People online fuss over getting games to 2x or 3x — that's chasing sharper, upscaled visuals on a modern screen, and *that's* the part that occasionally wants performance mode and a little fiddling. Run a game at its original resolution, the way it actually looked on the console, and most of that fuss disappears. Which raises a fair question: do you really need a pixel-perfect retina image to blow up aliens or rip past someone on a dirt bike? For a lot of these games, native looks completely fine. Either way, you're playing Wind Waker, F-Zero GX, Double Dash, Burnout 3, God of War, and Shadow of the Colossus on a handheld — hundreds of the best games ever made, across two of the most beloved libraries in history.
 
-A ~$249 Retroid Pocket 6 runs PlayStation 2 and GameCube, and at native resolution it runs them comfortably. You may have seen people online fussing over getting games to 2x or 3x — that's chasing sharper, upscaled visuals on a modern screen, and *that's* the part that occasionally wants performance mode and a little fiddling. Run a game at its original resolution, the way it actually looked on the console, and most of that fuss disappears. Which raises a fair question: do you really need a pixel-perfect retina image to blow up aliens or rip past someone on a dirt bike? For a lot of these games — and for kids who've never seen the originals — native looks completely fine. Either way, you're playing Wind Waker, F-Zero GX, Double Dash, Burnout 3, God of War, and Shadow of the Colossus on a handheld — hundreds of the best games ever made, across two of the most beloved libraries in history.
-
-And those libraries are *stacked*. Most people who grew up gaming in the 2000s never played everything they wanted to. There's a real argument — not nostalgia, an actual quality argument — that the PS2/GameCube era was the peak of game design for a huge number of genres: racing, action, sports, RPGs. The depth is almost embarrassing. If you didn't finish that era, you have a lifetime of great gaming waiting.
+And those libraries are *stacked*. Most people who grew up gaming in the 2000s never played everything they wanted to. A real argument — not nostalgia — can be made that the PS2/GameCube era was the peak of game design for a huge number of genres: racing, action, sports, RPGs. The depth is almost embarrassing. If you didn't finish that era, you have a lifetime of great gaming waiting.
 
 ---
 
@@ -59,7 +55,7 @@ A retro handheld inverts that. The Anbernic is ~$45 all-in; the Retroid lands ar
 
 In the morally upright, legally spotless scenario: you get a device with blank hardware. The Retroid, in fact, ships with no games at all — it's an Android device, and legitimate listings even say so in plain text ("NO PRELOAD GAMES"). They arrive empty, or with a microSD card, and you put games on them yourself. That means your own collection: if you own the cartridges and discs, dumping them to play on better hardware is exactly what this is for. A handheld that lets you finally play the boxes in your closet on a crisp screen is a genuinely good thing, full stop.
 
-Now, the broader reality: the full libraries of these old consoles are floating around the internet for free, and a lot of these devices turn up preloaded — especially the cheaper no-name China units you'll find on Amazon. Just an observable fact. I'm not going to walk you through it or tell you to do it — there's a copyright line there and you know where it is. People will make their own calls. The only point worth making is that "where do the games come from" has a very different answer than it does on a Switch 2, and that difference in cost and legality is part of the math whether anyone says it out loud or not. For games you already own: enjoy. Beyond that, you do you.
+Now, the broader reality: the full libraries of these old consoles are floating around the internet for free, and a lot of these devices turn up preloaded — especially the cheaper no-name China units you'll find on Amazon. Just an observable fact. I'm not going to walk you through it or tell you to do it — there's a copyright line there and you know where it is. People will make their own calls. The only point worth making is that "where do the games come from, and how much do they cost" has a very different answer than it does on a Switch 2. For games you already own: enjoy. Beyond that, you do you.
 
 ---
 
@@ -67,9 +63,9 @@ Now, the broader reality: the full libraries of these old consoles are floating 
 
 Fair question, and a real one: if you want Nintendo's new exclusives, you need a Switch 2. Nobody else has them.
 
-But push on the assumption underneath. The question isn't "do you want new games" — it's *is new actually more fun?*
+But really, *is new actually more fun?*
 
-PS2 and GameCube games weren't great because people were easier to please. They were great because the industry hadn't yet figured out how to ship half a game and sell you the rest later. No DLC, no season passes, no day-one patch fixing a broken launch, no live-service drip. You bought a game, it was finished, and it had to be worth your time or word got out. That discipline produced some of the most tightly designed, replayable games ever made. Put F-Zero GX or Burnout 3 in front of someone who's never heard of them and they'll have a great time. That's the only test that matters.
+PS2 and GameCube games weren't great because people were easier to please. They were great because the industry hadn't yet figured out how to ship half a game and sell you the rest later. No DLC, no season passes, no day-one patch fixing a broken launch. You bought a game, it was finished, and it had to be worth your time or word got out. That discipline produced some of the most tightly designed, replayable games ever made. Put F-Zero GX or Burnout 3 in front of someone who's never heard of them and they'll have a great time. That's the only test that matters.
 
 There's also a law of diminishing returns the industry would rather you not dwell on. NES to SNES was staggering. SNES to PS1, mind-blowing. PS1 to PS2 felt like the future. But PS3 to PS4? Sure. PS4 to PS5? Most people couldn't tell from across the room. Each leap gets smaller while hardware and game prices keep climbing. You pay more and more for less and less of a difference. Past a certain point you're paying for pixels you won't notice while a dirt bike flies past — the fun was never in the pixel count.
 
@@ -79,25 +75,23 @@ There's also a law of diminishing returns the industry would rather you not dwel
 
 ## But What About Family Time?
 
-Both kinds of device become a living room setup in about thirty seconds — HDMI out, Bluetooth controllers, WiFi. Plug into the TV, pair a couple of controllers, done. The Retroid can also take a USB-C hub with up to four wired controllers.
+Both kinds of device become a living room setup in about thirty seconds — HDMI out, Bluetooth controllers, WiFi. Plug into the TV, pair a couple of controllers, done. The Retroid can also take a USB-C hub with up to four wired controllers. Cheaper devices that top out at PS1, like the Anbernic, realistically do two players — much like the consoles they emulate.
 
 **Same-room couch play** works beautifully. Super Mario Kart, Bomberman, and Sunset Riders were built for exactly this. On the Retroid you can step it up to Serious Sam: Next Encounter — two players on PS2, or four-player split-screen on the GameCube version, connected to the TV, mowing down hordes of insane aliens together. Get a 10-year-old in front of any of them and watch what happens.
 
 **Device-to-device over your home WiFi** is also possible via RetroArch Netplay — peer-to-peer on your own network, no strangers, no servers, just two devices in your house. It shines on 8- and 16-bit games: head-to-head Bomberman, competitive Mario Kart. Useful when two kids want their own screen instead of sharing the TV.
 
-One honest caveat: netplay is best on the simpler older systems. For PS2/GameCube multiplayer, connect the Retroid to the TV and use controllers from the couch — that's the better-feeling experience for those generations anyway (and a Retroid-only scenario, since the $45 Anbernic doesn't do PS2).
+A caveat: netplay is best on the simpler older systems. For PS2/GameCube multiplayer, connect the Retroid to the TV and use controllers from the couch — that's the better-feeling experience for those generations anyway (and a Retroid-only scenario, since the $45 Anbernic doesn't do PS2).
 
-The Switch 2 has polished local multiplayer too — but a second one is another $500. Two Anbernics is $90. Two Retroids is ~$500 combined, and that's the *whole* cost. The math keeps landing the same way.
+The Switch 2 has polished local multiplayer too — but a second one is another $500. Two Anbernics is $90. Two Retroids is ~$500 combined, and that's the *whole* cost.
 
 ---
 
 ## The Kid Math
 
-If you're buying for kids, this is where it clicks.
-
 A Switch 2 is $500. Big games are $70–80. A Pro Controller is $85. You're past $650 before the first month is out — and that's before the "can we get this game?" conversation even starts.
 
-A kids' retro handheld is $45, and the classics are just *there*: Tetris, Dr. Mario, every Kirby, every Donkey Kong, decades of Mario. Hand a kid one and they won't ask for a single new game. That's not a bug — it's the point.
+A kids' retro handheld is $45, and the classics are just *there*: Tetris, Dr. Mario, every Kirby, every Donkey Kong, decades of Mario. Hand a kid one and they won't ask for a single new game.
 
 ---
 
