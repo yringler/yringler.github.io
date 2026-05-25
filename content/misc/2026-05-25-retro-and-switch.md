@@ -57,7 +57,7 @@ But - the full libraries of these old consoles are floating around the internet 
 
 ## Okay, But What About Brand New Games?
 
-Fair question, and a real one: if you want Nintendo's new exclusives, you need a Switch 2. Nobody else has them.
+If you want Nintendo's new exclusives, you need a Switch 2. Nobody else has them.
 
 But really, *is new actually more fun?*
 
