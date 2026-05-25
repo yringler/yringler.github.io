@@ -9,13 +9,11 @@ ai_conversation_url: https://claude.ai/share/2ec593a3-8dda-41c8-80e6-e7c7b1b9847
 
 The Nintendo Switch 2 is a great machine. But is it $500-better than a $45 handheld that plays the entire NES (Nintendo Entertainment System), SNES (Super Nintendo), Game Boy, Genesis, and PlayStation 1 libraries — or a $249 one that handles PS2 and GameCube?
 
-That's not a rhetorical question. It's the one worth asking before you hand over the money.
-
 ---
 
 ## A Little Story
 
-A few weeks ago I went looking for something my kids could play classic games on — something I wouldn't mourn if it got dropped, lost, or used as a frisbee. I fell down a rabbit hole, and what I found genuinely surprised me.
+A few weeks ago I went looking for something my kids could play classic games on — something I wouldn't mourn if it got dropped, lost, or used as a frisbee.
 
 For around $45, you can buy a handheld that plays essentially every Game Boy, GBA (Game Boy Advance), NES, SNES, Genesis, and PlayStation 1 game, on a bright screen with real controls, in something close to the size of the original Game Boy.
 
@@ -33,15 +31,13 @@ The higher-end ones — around $250 — are where it gets genuinely hard to just
 
 ## The PS2 and GameCube Argument Nobody Talks About
 
-A ~$249 Retroid Pocket 6 runs PlayStation 2 and GameCube, and at native resolution it runs them comfortably. People online fuss over getting games to 2x or 3x — that's chasing sharper, upscaled visuals on a modern screen, and *that's* the part that occasionally wants performance mode and a little fiddling. Run a game at its original resolution, the way it actually looked on the console, and most of that fuss disappears. Which raises a fair question: do you really need a pixel-perfect retina image to blow up aliens or rip past someone on a dirt bike? For a lot of these games, native looks completely fine. Either way, you're playing Wind Waker, F-Zero GX, Double Dash, Burnout 3, God of War, and Shadow of the Colossus on a handheld — hundreds of the best games ever made, across two of the most beloved libraries in history.
+A ~$249 Retroid Pocket 6 runs PlayStation 2 and GameCube, and at native resolution it runs them comfortably. People online fuss over getting games to 2x or 3x — that's chasing sharper, upscaled visuals on a modern screen, and *that's* the part that occasionally wants performance mode and a little fiddling. Run a game at its original resolution, the way it actually looked on the console, and most of that fuss disappears. And do you really need a pixel-perfect retina image to blow up aliens or rip past someone on a dirt bike? For a lot of these games, native looks fine. Either way, you're playing Wind Waker, F-Zero GX, Double Dash, Burnout 3, God of War, and Shadow of the Colossus on a handheld — hundreds of the best games ever made, across two of the most beloved libraries in history.
 
-And those libraries are *stacked*. Most people who grew up gaming in the 2000s never played everything they wanted to. A real argument — not nostalgia — can be made that the PS2/GameCube era was the peak of game design for a huge number of genres: racing, action, sports, RPGs. The depth is almost embarrassing. If you didn't finish that era, you have a lifetime of great gaming waiting.
+And those libraries are *stacked*. Most people who grew up gaming in the 2000s never played everything they wanted to. It can be made that the PS2/GameCube era was the peak of game design for a huge number of genres: racing, action, sports, RPGs. If you didn't finish that era, you have a lifetime of great gaming waiting.
 
 ---
 
 ## The Money Question
-
-Let's talk about why the price gap is wider than it looks.
 
 A Switch 2 is now **$499.99** — it went up $50 from its launch price in late 2025. Major first-party games run **$70–80**: Mario Kart World is $79.99 on its own, Donkey Kong Bananza launched at $69.99. A handful of smaller titles dip to $60, but the headline games are the expensive ones.
 
@@ -53,9 +49,9 @@ A retro handheld inverts that. The Anbernic is ~$45 all-in; the Retroid lands ar
 
 ## About the Games
 
-In the morally upright, legally spotless scenario: you get a device with blank hardware. The Retroid, in fact, ships with no games at all — it's an Android device, and legitimate listings even say so in plain text ("NO PRELOAD GAMES"). They arrive empty, or with a microSD card, and you put games on them yourself. That means your own collection: if you own the cartridges and discs, dumping them to play on better hardware is exactly what this is for. A handheld that lets you finally play the boxes in your closet on a crisp screen is a genuinely good thing, full stop.
+In the morally upright, legally spotless scenario: you get a device with blank hardware. The Retroid, in fact, ships with no games at all — it's an Android device, and legitimate listings even say so in plain text ("NO PRELOAD GAMES"). They arrive empty, or with a microSD card, and you put games on them yourself. That means your own collection: if you own the cartridges and discs, dumping them to play on better hardware is exactly what this is for. A handheld that lets you finally play the boxes in your closet on a crisp screen is a genuinely good thing, full stop. And it's actually easy to make copies of PS1 and PS2 games, and most XBOX.
 
-Now, the broader reality: the full libraries of these old consoles are floating around the internet for free, and a lot of these devices turn up preloaded — especially the cheaper no-name China units you'll find on Amazon. Just an observable fact. I'm not going to walk you through it or tell you to do it — there's a copyright line there and you know where it is. People will make their own calls. The only point worth making is that "where do the games come from, and how much do they cost" has a very different answer than it does on a Switch 2. For games you already own: enjoy. Beyond that, you do you.
+But - the full libraries of these old consoles are floating around the internet for free, and a lot of these devices turn up preloaded — especially the cheaper no-name China units you'll find on Amazon. Fact. I'm not going to walk you through it or tell you to do it — there's a copyright line there and you know where it is. People will make their own calls. The only point worth making is that "where do the games come from, and how much do they cost" has a very different answer than it does on a Switch 2. For games you already own: enjoy. Beyond that, you do you.
 
 ---
 
