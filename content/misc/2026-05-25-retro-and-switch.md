@@ -29,7 +29,7 @@ The higher-end ones — around $250 — are where it gets genuinely hard to just
 
 ---
 
-## The PS2 and GameCube Argument Nobody Talks About
+## The PS2 and GameCube for $250?
 
 A ~$249 Retroid Pocket 6 runs PlayStation 2 and GameCube, and at native resolution it runs them comfortably. People online fuss over getting games to 2x or 3x — that's chasing sharper, upscaled visuals on a modern screen, and *that's* the part that occasionally wants performance mode and a little fiddling. Run a game at its original resolution, the way it actually looked on the console, and most of that fuss disappears. And do you really need a pixel-perfect retina image to blow up aliens or rip past someone on a dirt bike? For a lot of these games, native looks fine. Either way, you're playing Wind Waker, F-Zero GX, Double Dash, Burnout 3, God of War, and Shadow of the Colossus on a handheld — hundreds of the best games ever made, across two of the most beloved libraries in history.
 
