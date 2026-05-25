@@ -2,12 +2,18 @@
 <div class="section-cards">
   {{- range $sections }}
   {{- if . }}
+  {{- $latest := index (.RegularPagesRecursive.ByDate.Reverse) 0 }}
   <a class="section-card" href="{{ .Permalink }}">
     <div class="section-card-title">{{ .Title }}</div>
     {{- with .Description }}
     <div class="section-card-desc">{{ . }}</div>
     {{- end }}
-    <div class="section-card-count">{{ len .RegularPagesRecursive }} posts →</div>
+    <div class="section-card-footer">
+      <span>{{ len .RegularPagesRecursive }} posts →</span>
+      {{- with $latest }}
+      <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
+      {{- end }}
+    </div>
   </a>
   {{- end }}
   {{- end }}
