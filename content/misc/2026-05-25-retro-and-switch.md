@@ -63,7 +63,11 @@ But really, *is new actually more fun?*
 
 PS2 and GameCube games weren't great because people were easier to please. They were great because the industry hadn't yet figured out how to ship half a game and sell you the rest later. No DLC, no season passes, no day-one patch fixing a broken launch. You bought a game, it was finished, and it had to be worth your time or word got out. That discipline produced some of the most tightly designed, replayable games ever made. Put F-Zero GX or Burnout 3 in front of someone who's never heard of them and they'll have a great time. That's the only test that matters.
 
-There's also a law of diminishing returns the industry would rather you not dwell on. NES to SNES was staggering. SNES to PS1, mind-blowing. PS1 to PS2 felt like the future. But PS3 to PS4? Sure. PS4 to PS5? Most people couldn't tell from across the room. Each leap gets smaller while hardware and game prices keep climbing. You pay more and more for less and less of a difference. Past a certain point you're paying for pixels you won't notice while a dirt bike flies past — the fun was never in the pixel count.
+There's also a law of diminishing returns the industry would rather you not dwell on. NES to SNES was staggering. SNES to PS1, mind-blowing. PS1 to PS2 felt like the future.
+
+PS1 gave you 3D, but it was rough — textures swam, edges jittered, and the world dissolved into fog a few feet out. The PS2 made 3D feel solid. Stable textures, real faces instead of angular masks, worlds that stretched to a horizon. Games stopped being corridors and became places. *Grand Theft Auto III* dropped you into a whole city you could just drive across; *Shadow of the Colossus* let you climb creatures the size of buildings. That was the jump — not "sharper," but standing somewhere.
+
+After that is window dressing. PS3 to PS4? Sure. PS4 to PS5? Most people couldn't tell from across the room. Each leap gets smaller while hardware and game prices keep climbing. You pay more and more for less and less of a difference. Past a certain point you're paying for pixels you won't notice while a dirt bike flies past — the fun was never in the pixel count.
 
 "New" equals "better" is a marketing argument, not a design one.
 
