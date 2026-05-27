@@ -21,6 +21,9 @@ buildFuture = true
   env = "production"
   mainSections = ["posts"]
 
+[security]
+    allowContent = ['text/html', 'text/markdown']
+
   [params.homeInfoParams]
     Title = "Random thoughts of me"
     Content = "Personal blog about technology, philosophy, and life"
