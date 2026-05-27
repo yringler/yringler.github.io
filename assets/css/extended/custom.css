@@ -98,8 +98,8 @@
   border-radius: 6px;
   border-top: 3px solid var(--primary);
   background-color: var(--code-bg);
-  text-decoration: none;
   color: inherit;
+  position: relative;
   transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -112,10 +112,19 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Stretched link: title anchor covers the whole card */
 .section-card-title {
   font-size: 1.05em;
   font-weight: 600;
   color: var(--primary);
+  text-decoration: none;
+}
+
+.section-card-title::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 .section-card-desc {
@@ -131,6 +140,30 @@
   color: var(--secondary);
   margin-top: auto;
   padding-top: 0.4em;
+}
+
+/* Inner links sit above the stretched overlay */
+.section-card-date-link,
+.section-card-latest-title {
+  position: relative;
+  z-index: 1;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.section-card-latest-title {
+  font-style: italic;
+}
+
+.section-card-date-link:hover,
+.section-card-latest-title:hover {
+  text-decoration: underline;
+}
+
+.section-card-latest {
+  font-size: 0.85em;
+  color: var(--secondary);
+  padding-top: 0.2em;
 }
 
 /* Series Navigation */

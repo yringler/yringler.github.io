@@ -1,20 +1,32 @@
 {{- $sections := slice (site.GetPage "/misc") (site.GetPage "/series") }}
 <div class="section-cards">
-  {{- range $sections }}
-  {{- if . }}
-  {{- $latest := index (.RegularPagesRecursive.ByDate.Reverse) 0 }}
-  <a class="section-card" href="{{ .Permalink }}">
-    <div class="section-card-title">{{ .Title }}</div>
-    {{- with .Description }}
-    <div class="section-card-desc">{{ . }}</div>
-    {{- end }}
-    <div class="section-card-footer">
-      <span>{{ len .RegularPagesRecursive }} posts →</span>
-      {{- with $latest }}
-      <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-      {{- end }}
+    {{- range $sections }} {{- if . }} {{- $latest := index
+    (.RegularPagesRecursive.ByDate.Reverse) 0 }}
+    <div class="section-card">
+        <a
+            class="section-card-title section-card-stretch"
+            href="{{ .Permalink }}"
+            >{{ .Title }}</a
+        >
+        {{- with .Description }}
+        <div class="section-card-desc">{{ . }}</div>
+        {{- end }}
+        <div class="section-card-footer">
+            <span>{{ len .RegularPagesRecursive }} posts →</span>
+            {{- with $latest }}
+            <a class="section-card-date-link" href="{{ .Permalink }}"
+                >Updated {{ .Date.Format "Jan 2, 2006" }}</a
+            >
+            {{- end }}
+        </div>
+        {{- with $latest }}
+        <div class="section-card-latest">
+            ↳
+            <a class="section-card-latest-title" href="{{ .Permalink }}"
+                >{{ .Title }}</a
+            >
+        </div>
+        {{- end }}
     </div>
-  </a>
-  {{- end }}
-  {{- end }}
+    {{- end }} {{- end }}
 </div>
