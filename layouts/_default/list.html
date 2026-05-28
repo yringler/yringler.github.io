@@ -40,6 +40,10 @@
 
 {{- $pages := union .RegularPages .Sections }}
 
+{{- if and (not .IsHome) (.RegularPages) (index .RegularPages 0).Params.series_part }}
+{{- $pages = sort .RegularPages "Params.series_part" "desc" }}
+{{- end }}
+
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
@@ -90,7 +94,7 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
-      {{- .Title }}
+      {{- if .Params.series_part }}Part {{ .Params.series_part }}: {{ end }}{{- .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
