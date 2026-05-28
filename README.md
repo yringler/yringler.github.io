@@ -36,6 +36,14 @@ Your content here...
 
 Tags are always arrays (use `[tag]` even for a single tag). Hugo auto-generates tag pages — no need to create them manually.
 
+### AI disclosure
+
+Add `ai_conversation_url` (string or list) to a post's front matter to render the AI disclaimer linking the source conversation(s).
+
+### Series
+
+Multi-part posts live under `content/series/<series-name>/`. Each post sets `series` and `series_part`; the series `_index.md` can carry an `ai_conversation_url` and the `ai-generated` tag, which every post in the section inherits.
+
 ## Deployment
 
 Push to `main` and GitHub Actions will automatically build and deploy the site.

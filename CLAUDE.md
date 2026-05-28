@@ -9,6 +9,7 @@ yringler.github.io/
 ├── hugo.toml                  # Site configuration
 ├── content/
 │   ├── posts/                 # Blog posts (Markdown files)
+│   ├── series/                # Multi-part series (one section per series)
 │   ├── chats/                 # AI conversation transcripts
 │   └── about.md               # About page
 ├── layouts/
@@ -104,9 +105,11 @@ ai_conversation_url:
 
 The disclaimer is rendered via `layouts/partials/ai-disclaimer.html`, injected by the custom `layouts/posts/single.html`.
 
+For posts that belong to a series, the disclaimer also falls back to the series `_index.md` — see [Series Support](#series-support).
+
 ### Series Support
 
-For multi-part posts, add `series` and `series_part` to front matter:
+Series posts live as a Hugo section under `content/series/<series-name>/`, with a series-level `_index.md`. Each post sets `series` and `series_part` in its front matter:
 
 ```yaml
 ---
@@ -116,6 +119,18 @@ series_part: 1
 ```
 
 A navigation box automatically appears showing all parts of the series.
+
+**Series-level AI disclosure**: `ai_conversation_url` and the `ai-generated` tag can be set on the series `_index.md` instead of on every post. `ai-disclaimer.html` falls back to `.CurrentSection.Params` when the post itself doesn't define them, so every post in the section inherits the series-level disclosure. A post-level value still overrides the series-level one.
+
+```yaml
+# content/series/<name>/_index.md
+---
+title: "Series Title"
+ai_conversation_url:
+  - https://claude.ai/share/...
+tags: [ai-generated]
+---
+```
 
 ## Site Configuration
 
