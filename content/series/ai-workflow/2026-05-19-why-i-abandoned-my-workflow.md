@@ -3,7 +3,7 @@ date: 2026-05-19T00:00:00-05:00
 slug: "why-i-abandoned-my-sophisticated-ai-coding-workflow"
 url: "/2026/05/19/why-i-abandoned-my-sophisticated-ai-coding-workflow/"
 title: "Why I Abandoned My Sophisticated AI Coding Workflow"
-tags: [ai, ai-generated]
+tags: [ai, ai-generated, in-review]
 series: AI-coding-shift
 series_part: 1
 ---
