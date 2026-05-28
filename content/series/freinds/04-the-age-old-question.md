@@ -2,7 +2,7 @@
 title: "Addendum: Age Changes the Question"
 subtitle: "What happens to a teenage boy's peer world between eleven and eighteen"
 date: 2026-05-27
-draft: true
+draft: false
 series: the-friend-outside
 series_part: 4
 ---

@@ -2,7 +2,7 @@
 title: "It Starts With You"
 subtitle: "The constructive answer"
 date: 2026-05-27
-draft: true
+draft: false
 series: the-friend-outside
 series_part: 3
 ---

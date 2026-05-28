@@ -2,7 +2,7 @@
 title: "Children Become Who They Play With"
 subtitle: "The secular evidence, and the Jewish anomaly"
 date: 2026-05-27
-draft: true
+draft: false
 series: the-friend-outside
 series_part: 1
 ---

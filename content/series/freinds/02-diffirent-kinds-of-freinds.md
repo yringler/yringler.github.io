@@ -2,7 +2,7 @@
 title: "Not All Friendships Are the Same"
 subtitle: "A taxonomy of risk"
 date: 2026-05-27
-draft: true
+draft: false
 series: the-friend-outside
 series_part: 2
 ---
