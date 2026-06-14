@@ -1,7 +1,7 @@
 ---
 date: 2026-06-14T00:00:00-05:00
 slug: "the-ghost-of-kant"
-title: "The Ghost Kant Was Working With"
+title: "The Ghost of Kant - on Faith and Reason"
 tags: [ai-generated]
 ai_conversation_url:
   - https://claude.ai/share/7382f19e-7e9e-457f-8070-afbfa8cb835a
