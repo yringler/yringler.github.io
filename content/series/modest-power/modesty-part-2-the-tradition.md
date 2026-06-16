@@ -1,3 +1,12 @@
+---
+date: 2026-06-16T00:00:00-05:00
+title: "Modesty and Tradition"
+slug: "modesty-and-tradition"
+tags: [ai-generated, judaism, philosophy]
+series: modest-power
+series_part: 2
+---
+
 *The previous part lays out the idea from first principles: beauty is a kind of power — it acts on people before they consent — and the grown-up thing to do with power is to carry it with care, neither flaunting it nor burying it as shameful. That argument is deliberately narrow: it only speaks where power is in play, and it generates no dress codes. This part turns to a specific application: the place of modesty in Jewish life, and a failure mode the principle predicts.*
 
 ## "But Why So Many Rules for Women?"

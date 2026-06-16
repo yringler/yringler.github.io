@@ -1,3 +1,12 @@
+---
+date: 2026-06-15T00:00:00-05:00
+title: "Innocence Power and Modesty"
+slug: "innocence-power-modesty"
+tags: [ai-generated, judaism, philosophy]
+series: modest-power
+series_part: 1
+---
+
 ## The Innocence of Children
 
 Picture an isolated village in the hills. The children there have found little nuggets of gold in the streambed, and they play with them — flick them, trade them, leave them in the dirt. You watch and you smile. They are holding something that could build a house or buy a field, and to them it is a pebble that catches the light.
@@ -51,6 +60,8 @@ That's the same structure as modesty. The power that's simply present — and no
 ## Where the Argument Stops
 
 The whole argument runs on one premise: power held should be carried with care. So it only reaches cases where power is actually present. Where nothing acts on anyone — an obviously fake gun, dress that moves nothing in the room — this framework is not useful, and so it says nothing. It doesn't permit those cases and it doesn't condemn them; it's simply silent.
+
+But "there's no power here" is a claim that has to be earned, not assumed. The whole point of the pretty-privilege research is that the power operates below the level of anyone's awareness — it moves hiring decisions and verdicts from people who would swear it didn't touch them. So "I don't feel any power in play" proves nothing; that's exactly how this kind of power works. The genuinely powerless cases are real, but difficult to identify with objective clarity across the board.
 
 No practical rules about dress codes and the like fall out of this. It's an idea, not a code. How to apply it is a separate question this essay doesn't answer.
 
