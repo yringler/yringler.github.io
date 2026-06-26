@@ -194,3 +194,38 @@
 .series-nav ol li {
   margin-bottom: 0.3em;
 }
+
+/* Series prev/next footer navigation */
+.series-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.5em 0 1.5em;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5em;
+}
+
+.series-nav-footer-prev,
+.series-nav-footer-next {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  max-width: 48%;
+}
+
+.series-nav-footer-next {
+  text-align: right;
+  margin-left: auto;
+}
+
+.series-nav-footer-label {
+  font-size: 0.8em;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.series-nav-footer a {
+  font-weight: 600;
+  color: var(--primary);
+}

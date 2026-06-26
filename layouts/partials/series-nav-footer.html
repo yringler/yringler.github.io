@@ -1,0 +1,36 @@
+{{ with .Params.series }}
+  {{ $currentSeries := . }}
+  {{ $currentPage := $ }}
+  {{ $seriesPosts := where $.Site.RegularPages "Params.series" $currentSeries }}
+  {{ $seriesPosts = sort $seriesPosts "Params.series_part" }}
+  {{ if gt (len $seriesPosts) 1 }}
+    {{ $prev := false }}
+    {{ $next := false }}
+    {{ $found := false }}
+    {{ range $seriesPosts }}
+      {{ if $found }}
+        {{ if not $next }}{{ $next = . }}{{ end }}
+      {{ else if eq .Permalink $currentPage.Permalink }}
+        {{ $found = true }}
+      {{ else }}
+        {{ $prev = . }}
+      {{ end }}
+    {{ end }}
+    {{ if or $prev $next }}
+      <nav class="series-nav-footer">
+        <div class="series-nav-footer-prev">
+          {{ with $prev }}
+            <span class="series-nav-footer-label">← Previous in series</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+        <div class="series-nav-footer-next">
+          {{ with $next }}
+            <span class="series-nav-footer-label">Next in series →</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+      </nav>
+    {{ end }}
+  {{ end }}
+{{ end }}
