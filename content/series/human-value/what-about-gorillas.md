@@ -1,4 +1,12 @@
-# But What About Gorillas?
+---
+date: 2026-06-26T00:00:00-05:00
+title: "But What About Gorillas?"
+subtitle: "A framework for animal moral status that doesn't collapse into sentimentality or dismissiveness"
+slug: "but-what-about-gorillas"
+tags: [ai-generated, philosophy, ethics, judaism]
+series: human-value
+series_part: 2
+---
 
 *A framework for animal moral status that doesn't collapse into sentimentality or dismissiveness*
 

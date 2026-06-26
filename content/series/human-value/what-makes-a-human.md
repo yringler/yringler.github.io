@@ -1,4 +1,12 @@
-# What Makes a Human Worth Protecting?
+---
+date: 2026-06-25T00:00:00-05:00
+title: "What Makes a Human Worth Protecting?"
+subtitle: "On kind membership, potential, and the collapse of civilizational superiority"
+slug: "what-makes-a-human-worth-protecting"
+tags: [ai-generated, philosophy, ethics]
+series: human-value
+series_part: 1
+---
 
 *On kind membership, potential, and the collapse of civilizational superiority*
 
