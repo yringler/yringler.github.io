@@ -1,7 +1,7 @@
 ---
 date: 2026-03-06T00:00:00-05:00
 title: "From Sacred Text to Static Site: Building Sha'ar HaYichud Resources with AI"
-tags: [ai, coding, ai-generated]
+tags: [ai-generated, ai, coding, chassidus]
 ai_conversation_url: https://claude.ai/share/22428a46-c5ef-4879-beda-2c1662ac45b7
 ---
 

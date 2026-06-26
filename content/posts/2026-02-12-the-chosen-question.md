@@ -2,7 +2,7 @@
 date: 2026-02-12T00:00:00-05:00
 slug: "the-chosen-question"
 title: "The Chosen Question"
-tags: [ai-generated]
+tags: [ai-generated, judaism, chassidus, philosophy]
 ai_conversation_url:
   - https://claude.ai/share/93791a24-2394-4b7c-ae4f-9fdc06a7eb5a
   - https://claude.ai/share/6d5927d3-34de-47b9-828d-565c1df5e307

@@ -2,7 +2,7 @@
 date: 2020-08-13T00:00:00-05:00
 slug: "not-so-fast"
 title: "Not So Fast"
-tags: [coding]
+tags: [coding, personal]
 ---
 
 So – I _finally_ finished rewriting all the low level code for [my app](https://github.com/yringler/inside-app), and I'm quite proud of it, actually. It was a [big](https://github.com/yringler/inside-api) [deal](https://github.com/yringler/just_audio_service). And now it's time for some [UI stuff](https://github.com/yringler/inside-app/pull/72)!

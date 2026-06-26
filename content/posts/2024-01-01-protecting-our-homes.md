@@ -2,6 +2,7 @@
 date: 2024-01-01T00:00:00-05:00
 slug: "protecting-our-homes"
 title: "Protecting our homes"
+tags: [coding, parenting]
 categories: Internet
 ---
 We want our homes to be safe. Many people suffice with a heavy door and a strong lock. But it isn’t always enough to fortify our homes. In our increasingly volatile world, it is wise to strengthen our selves, with firearms and the like. But even the most ardent believers in the importance of self defense don’t recommend removing your front door.

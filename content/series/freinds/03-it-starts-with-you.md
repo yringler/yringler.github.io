@@ -1,5 +1,6 @@
 ---
 title: "It Starts With You"
+tags: [ai-generated, judaism, parenting, chassidus]
 subtitle: "The constructive answer"
 date: 2026-05-27
 draft: false

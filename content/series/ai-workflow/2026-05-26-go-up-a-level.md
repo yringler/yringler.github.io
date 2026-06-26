@@ -3,7 +3,7 @@ date: 2026-05-26T00:00:00-05:00
 slug: "the-real-skill-is-knowing-when-to-go-up-a-level"
 url: "/2026/05/26/the-real-skill-is-knowing-when-to-go-up-a-level/"
 title: "The Real Skill is Knowing When to Go Up a Level"
-tags: [ai, ai-generated, in-review]
+tags: [ai-generated, in-review, ai, coding]
 series: AI-coding-shift
 series_part: 2
 ---

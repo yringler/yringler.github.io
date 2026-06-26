@@ -1,5 +1,6 @@
 ---
 title: "Addendum: Age Changes the Question"
+tags: [ai-generated, judaism, parenting]
 subtitle: "What happens to a teenage boy's peer world between eleven and eighteen"
 date: 2026-05-27
 draft: false

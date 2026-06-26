@@ -2,7 +2,7 @@
 date: 2022-05-19T00:00:00-05:00
 slug: "building-an-industrial-pipe-bookshelf"
 title: "Building an industrial pipe bookshelf"
-tags: []
+tags: [diy]
 ---
 
 My advice on putting up an industrial pipe shelving kit

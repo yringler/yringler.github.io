@@ -2,7 +2,7 @@
 date: 2026-06-15T00:00:00-05:00
 title: "Innocence Power and Modesty"
 slug: "innocence-power-modesty"
-tags: [ai-generated, judaism, philosophy]
+tags: [ai-generated, philosophy, ethics, judaism]
 series: modest-power
 series_part: 1
 ---

@@ -4,7 +4,7 @@ slug: "managed-decline-part1"
 title: "The Illusion of Security: America's Institutional Decline and the Demographic Trap - Part 1"
 series: managed-decline
 series_part: 1
-tags: [ai-generated, in-review]
+tags: [ai-generated, in-review, politics, israel, judaism]
 ai_conversation_url: /chats/social-security-israel-moshiach.html
 ---
 

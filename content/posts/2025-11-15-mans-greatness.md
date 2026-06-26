@@ -2,7 +2,7 @@
 date: 2025-11-15T00:00:00-05:00
 slug: "mans-greatness"
 title: "Man's Greatness"
-tags: []
+tags: [philosophy, chassidus]
 ---
 
 In what is found the greatness of man? In his understanding? That would leave the difference between man and beast to be a matter of degree. In fact, that would leave beast as our superior; his intellect is perfectly suited to his needs. The path to obtain them - or the cruel reality of his inability - is always clear.

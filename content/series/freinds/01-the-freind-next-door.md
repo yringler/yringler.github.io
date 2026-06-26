@@ -1,5 +1,6 @@
 ---
 title: "Children Become Who They Play With"
+tags: [ai-generated, judaism, parenting]
 subtitle: "The secular evidence, and the Jewish anomaly"
 date: 2026-05-27
 draft: false

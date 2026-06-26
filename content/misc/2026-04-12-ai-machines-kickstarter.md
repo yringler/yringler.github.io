@@ -1,7 +1,7 @@
 ---
 date: 2026-04-12T00:00:00-05:00
 url: "/2026/04/12/the-ai-pc-kickstarter-gold-rush/"
-tags: [ai-generated]
+tags: [ai-generated, ai, culture]
 title: "The AI PC Kickstarter Gold Rush"
 ---
 

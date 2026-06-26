@@ -2,7 +2,7 @@
 date: 2026-06-14T00:00:00-05:00
 slug: "the-ghost-of-kant"
 title: "The Ghost of Kant - On Faith and Reason"
-tags: [ai-generated]
+tags: [ai-generated, philosophy, chassidus]
 ai_conversation_url:
   - https://claude.ai/share/7382f19e-7e9e-457f-8070-afbfa8cb835a
   - https://claude.ai/share/ab46b6a2-9fde-4424-80f4-77a8dd1d6e12

@@ -1,5 +1,6 @@
 ---
 title: "Claude chat - from social security to Moshiach"
+tags: [politics, judaism, israel]
 url: "/chats/social-security-israel-moshiach.html"
 ---
 

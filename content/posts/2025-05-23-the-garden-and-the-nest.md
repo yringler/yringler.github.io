@@ -2,7 +2,7 @@
 date: 2025-05-23T00:00:00-05:00
 slug: "the-garden-and-the-nest"
 title: "The Garden and the Nest"
-tags: [poetry]
+tags: [poetry, personal]
 ---
 
 As I glared at my garden, the rocks, the old shade tree

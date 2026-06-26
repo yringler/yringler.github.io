@@ -2,7 +2,7 @@
 date: 2024-01-29T00:00:00-05:00
 slug: "getting-real"
 title: "Getting Real"
-tags: []
+tags: [chassidus, personal]
 ---
 
 The story is told of the young man who comes back home after meeting a prospective match. His mother asks

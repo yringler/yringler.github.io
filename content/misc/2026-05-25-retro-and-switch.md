@@ -1,7 +1,7 @@
 ---
 date: 2026-05-25T00:00:00-05:00
 title: "Before You Drop $500 on a Switch 2, Read This"
-tags: [ai-generated]
+tags: [ai-generated, culture]
 ai_conversation_url: https://claude.ai/share/2ec593a3-8dda-41c8-80e6-e7c7b1b9847a
 ---
 

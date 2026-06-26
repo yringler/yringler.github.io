@@ -87,7 +87,13 @@ Hugo auto-generates tag pages via taxonomies. No need to create individual tag p
 - Individual tag pages: `/tags/tag-name/`
 - Just add tags to post front matter
 
-**Existing tags**: ai, ai-generated, poetry, coding, in-review
+**Use the canonical tag set defined in [`TAGS.md`](TAGS.md).** Pick tags from that list rather than inventing new ones; if something genuinely doesn't fit, add it to `TAGS.md` first with a definition. Tags fall into three groups:
+
+- **Functional** (drive layout behavior): `ai-generated`, `in-review`
+- **Format**: `poetry`, `diy`
+- **Topic**: `coding`, `ai`, `chassidus`, `judaism`, `philosophy`, `ethics`, `culture`, `politics`, `israel`, `parenting`, `personal`, `language`
+
+A post usually carries 2–4 tags: at most one format tag plus the topic tags that apply, alongside any functional tag. See `TAGS.md` for what each one means.
 
 ### AI-Generated Content
 

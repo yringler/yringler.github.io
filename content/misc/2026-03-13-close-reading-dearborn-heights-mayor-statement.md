@@ -2,7 +2,7 @@
 date: 2026-03-13T00:00:00-05:00
 title: "A Close Reading of the Dearborn Heights Mayor's Statement on the Temple Israel Attack"
 url: "/2026/03/13/a-close-reading-of-the-dearborn-heights-mayors-statement-on-the-temple-israel-attack/"
-tags: [ai-generated]
+tags: [ai-generated, politics, judaism]
 ---
 
 # A Close Reading of the Dearborn Heights Mayor's Statement on the Temple Israel Attack

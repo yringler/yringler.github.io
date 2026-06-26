@@ -5,7 +5,7 @@ url: "/2026/02/09/managed-decline-part2/"
 title: "Beyond Managed Decline: The Torah Framework for Human Flourishing - Part 2"
 series: managed-decline
 series_part: 2
-tags: [ai-generated, in-review]
+tags: [ai-generated, in-review, politics, israel, judaism]
 ai_conversation_url: /chats/social-security-israel-moshiach.html
 ---
 

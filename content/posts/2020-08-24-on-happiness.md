@@ -2,7 +2,7 @@
 date: 2020-08-24T00:00:00-05:00
 slug: "on-happiness"
 title: "On Happiness"
-tags: []
+tags: [personal, parenting, philosophy]
 ---
 
 My two year old son was sad on the long drive home today. Very sad. Car sick, tired, miserable, alternating between tears and distraction to the sound of my barely coherent ramblings. We get home, and I unpack, and all the while inside the car he is the picture of misery. I take him out of the car, and he's happy! He gets a bath, changed, a song in bed, and all the old suffering is gone, replaced by joy and security.

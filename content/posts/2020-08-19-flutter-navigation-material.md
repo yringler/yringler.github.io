@@ -2,7 +2,7 @@
 date: 2020-08-19T00:00:00-05:00
 slug: "flutter-navigation-material"
 title: "Flutter Navigation Material"
-tags: [coding]
+tags: [coding, chassidus]
 ---
 
 To my great consternation, route transition animations broke after upgrading the app – when going from one section to another, the old one was visible behind the new one until the transition was finished, and it looked terrible. I could not think what could be the problem.

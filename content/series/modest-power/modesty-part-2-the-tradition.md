@@ -2,7 +2,7 @@
 date: 2026-06-16T00:00:00-05:00
 title: "Modesty and Tradition"
 slug: "modesty-and-tradition"
-tags: [ai-generated, judaism, philosophy]
+tags: [ai-generated, judaism, ethics, philosophy]
 series: modest-power
 series_part: 2
 ---

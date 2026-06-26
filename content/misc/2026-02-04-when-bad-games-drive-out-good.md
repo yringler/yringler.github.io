@@ -3,7 +3,7 @@ date: 2026-02-04T00:00:00-05:00
 slug: "when-bad-games-drive-out-good"
 url: "/2026/02/04/when-bad-games-drive-out-good/"
 title: "When Bad Games Drive Out Good: The Hidden Cost of \"Free\""
-tags: [ai, ai-generated]
+tags: [ai-generated, culture, ethics]
 ai_conversation_url: https://claude.ai/share/6b61ac98-b301-403b-9846-7c9d0b787c25
 ---
 

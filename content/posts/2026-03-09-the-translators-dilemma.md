@@ -1,7 +1,7 @@
 ---
 date: 2026-03-09T00:00:00-05:00
 title: "The Translator's Dilemma: Why Hebrew Flows and English Breaks"
-tags: [ai-generated]
+tags: [ai-generated, language, chassidus]
 ai_conversation_url: https://claude.ai/share/a87756d7-d8d3-40c3-9343-7b68911047c7
 ---
 

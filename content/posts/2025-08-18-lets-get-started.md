@@ -2,7 +2,7 @@
 date: 2025-08-18T00:00:00-05:00
 slug: "lets-get-started"
 title: "Let's Get Started"
-tags: [poetry]
+tags: [poetry, coding, ai]
 ---
 
 So-

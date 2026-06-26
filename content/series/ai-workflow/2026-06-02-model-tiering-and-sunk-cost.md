@@ -3,7 +3,7 @@ date: 2026-06-02T00:00:00-05:00
 slug: "model-tiering-and-the-sunk-cost-trap"
 url: "/2026/06/02/model-tiering-and-the-sunk-cost-trap/"
 title: "Model Tiering and the Sunk Cost Trap"
-tags: [ai, ai-generated, in-review]
+tags: [ai-generated, in-review, ai, coding]
 series: AI-coding-shift
 series_part: 3
 ---

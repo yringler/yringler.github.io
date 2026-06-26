@@ -2,7 +2,7 @@
 date: 2026-01-22T00:00:00-05:00
 slug: "parallel-ai-coding-prerequisites"
 title: "AI Parallelism: The New Forcing Function for Clean Architecture"
-tags: [ai-generated, ai]
+tags: [ai-generated, ai, coding]
 ai_conversation_url: https://claude.ai/share/370c1220-3e8a-4be1-a3b7-317c2620e136
 ---
 

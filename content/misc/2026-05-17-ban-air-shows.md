@@ -1,7 +1,7 @@
 ---
 date: 2026-05-17T00:00:00-05:00
 title: "The Sky Arena: Why Air Shows Are a Moral Anachronism We've Somehow Normalized"
-tags: [ai-generated]
+tags: [ai-generated, ethics, culture]
 ai_conversation_url: https://claude.ai/share/4a0d001d-b58d-4a00-acf6-5bb4f009100a
 ---
 # The Sky Arena: Why Air Shows Are a Moral Anachronism We've Somehow Normalized

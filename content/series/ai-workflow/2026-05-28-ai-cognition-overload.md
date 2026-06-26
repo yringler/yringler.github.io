@@ -1,6 +1,6 @@
 ---
 title: "Addendum 1: AI Coding as Superstimulus"
-tags: [ai, ai-generated]
+tags: [ai-generated, ai, coding]
 series: AI-coding-shift
 series_part: 5
 ---

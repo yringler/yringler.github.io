@@ -1,5 +1,6 @@
 ---
 title: "Not All Friendships Are the Same"
+tags: [ai-generated, judaism, parenting]
 subtitle: "A taxonomy of risk"
 date: 2026-05-27
 draft: false

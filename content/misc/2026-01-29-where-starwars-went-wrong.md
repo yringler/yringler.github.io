@@ -3,7 +3,7 @@ date: 2026-01-29T00:00:00-05:00
 slug: "where-starwars-went-wrong"
 url: "/2026/01/29/where-starwars-went-wrong/"
 title: "The Force Is a Religion: Why Modern Star Wars Can't Find Its Soul"
-tags: [ai-generated]
+tags: [ai-generated, culture, philosophy]
 ai_conversation_url: https://claude.ai/share/e9b183f7-06ea-4a67-9d76-771519e3d64b
 ---
 

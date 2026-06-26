@@ -3,7 +3,7 @@ date: 2026-06-09T00:00:00-05:00
 slug: "architecture-has-immediate-economic-value-now"
 url: "/2026/06/09/architecture-has-immediate-economic-value-now/"
 title: "Architecture Has Immediate Economic Value Now"
-tags: [ai, ai-generated, in-review]
+tags: [ai-generated, in-review, ai, coding]
 series: AI-coding-shift
 series_part: 4
 ---
