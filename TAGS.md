@@ -51,6 +51,11 @@ What the piece is about. Use as many as genuinely apply.
 | `politics` | Geopolitics, society, law, and current affairs — civilizational analysis, legal cases, public statements. |
 | `israel` | Israel and the Jewish people in the news — war, antisemitism, memorial pieces, Israeli exceptionalism. |
 
+### Music
+| Tag | Meaning |
+|-----|---------|
+| `music` | Playing and understanding music — instruments, technique, theory, listening. |
+
 ### Life
 | Tag | Meaning |
 |-----|---------|
@@ -62,5 +67,5 @@ What the piece is about. Use as many as genuinely apply.
 
 - Reach for an existing tag before adding a new one. `culture`/`politics` and `philosophy`/`ethics` are deliberately broad buckets — most cultural-criticism and idea pieces fit one of them.
 - `chassidus` vs `judaism`: use `chassidus` for inner-Torah / Chabad philosophy; use `judaism` for practice, law, identity, and community. A piece can carry both.
-- `diy` and `language` are occasional tags — fine to leave a post as the only one under them.
+- `diy`, `language`, and `music` are occasional tags — fine to leave a post as the only one under them.
 - If you genuinely need a new tag, add a row above with a one-line definition so the set stays meaningful.

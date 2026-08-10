@@ -91,7 +91,7 @@ Hugo auto-generates tag pages via taxonomies. No need to create individual tag p
 
 - **Functional** (drive layout behavior): `ai-generated`, `in-review`
 - **Format**: `poetry`, `diy`
-- **Topic**: `coding`, `ai`, `chassidus`, `judaism`, `philosophy`, `ethics`, `culture`, `politics`, `israel`, `parenting`, `personal`, `language`
+- **Topic**: `coding`, `ai`, `chassidus`, `judaism`, `philosophy`, `ethics`, `culture`, `politics`, `israel`, `music`, `parenting`, `personal`, `language`
 
 A post usually carries 2–4 tags: at most one format tag plus the topic tags that apply, alongside any functional tag. See `TAGS.md` for what each one means.
 
