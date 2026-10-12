@@ -83,6 +83,11 @@ buildFuture = true
   path = "clean-chat.html"
   description = "Copy and edit a claude chat"
 
+[[params.angularApps]]
+  name = "Cheder Flashcards"
+  url = "https://blog.yehudardevelopment.com/cheder-flashcards/"
+  description = "Flashcards for cheder learning"
+
 [taxonomies]
   tag = "tags"
 
