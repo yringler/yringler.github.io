@@ -1,7 +1,8 @@
 ---
 date: 2026-10-14T00:00:00-05:00
 title: "Judging Favorably Without Making Things Up"
-tags: [chassidus, judaism, ethics]
+tags: [ai-generated, chassidus, judaism, ethics]
+ai_conversation_url: https://claude.ai/share/3a4e494d-2854-4298-84f1-6567b99bc7c0
 ---
 
 Someone cuts you off, takes credit for your work, says something cruel. The standard Jewish advice is *dan lekaf zechus*: judge them favorably. Maybe he was rushing to the hospital. Maybe she didn't realize how it sounded.
