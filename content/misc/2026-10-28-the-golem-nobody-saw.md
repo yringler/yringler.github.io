@@ -15,7 +15,7 @@ The story as we know it comes almost entirely from *Nifla'os Maharal*, published
 
 None of it holds up. Rudolf wasn't emperor in 1572. The Maharal wasn't the rav of Prague in 1572 and wasn't even living there yet. There was no Cardinal Sylvester in Prague in any century. There was no Royal Library of Metz.
 
-The other evidence is just as thin. No written source ties a golem to the Maharal until around 1840, roughly 230 years after his death. Gershom Scholem argued that the Chelm legend migrated to the more famous rabbi, a move helped along by the Maharal's well-known private audience with Rudolf, an emperor obsessed with alchemy and the occult. Even the Altneushul's custom of saying *Mizmor Shir L'yom HaShabbos* twice on Friday night, usually explained as the Maharal stopping a rampaging golem before Shabbos, has a more plausible explanation. Kabbalas Shabbos was new, imported from Tzfas. Prague welcomed Shabbos with Lecha Dodi and musical instruments, then repeated the psalm to mark the moment Shabbos began in halacha and the instruments had to stop.
+The other evidence is just as thin. No written source ties a golem to the Maharal until around 1840, roughly 230 years after his death, though the story circulated orally before then. Gershom Scholem argued that the Chelm legend migrated to the more famous rabbi, a move helped along by the Maharal's well-known private audience with Rudolf, an emperor obsessed with alchemy and the occult. Even the Altneushul's custom of saying *Mizmor Shir L'yom HaShabbos* twice on Friday night, usually explained as the Maharal stopping a rampaging golem before Shabbos, has a more plausible explanation. Kabbalas Shabbos was new, imported from Tzfas. Prague welcomed Shabbos with Lecha Dodi and musical instruments, then repeated the psalm to mark the moment Shabbos began in halacha and the instruments had to stop.
 
 ## Rosenberg wasn't lying
 
@@ -37,11 +37,13 @@ That's convenient, and the convenience cuts both ways. You can't establish a his
 
 ## What's left
 
-There is a better reason, and it isn't about convenience. It's about cost. Every source connecting the Maharal to a golem is the legend, and the legend consists of the very parts the secret version has to discard: the blood libels, the rampage, the attic, the psalm. Strip those away as fiction and nothing is left holding up the core claim. You'd be keeping one assertion from a source you've otherwise rejected, and it's the one assertion that can't be checked.
+But that comes at a cost. Every source connecting the Maharal to a golem is the legend, and the legend consists of the very parts the secret version has to discard: the blood libels, the rampage, the attic, the psalm. Strip those away as fiction and you'd be keeping one assertion from a source you've otherwise rejected, and it's the one assertion that can't be checked.
+
+What's left is oral tradition. Hersh notes the story was popular by word of mouth before anyone wrote it down, and nobody knows how far back that goes. A rumor older than Rosenberg, maybe older than 1840, could carry a real memory. It could equally be the Chelm story already drifting toward Prague. Either way, it arrives without a source, without a date, and already dressed in the dramatic version, so there's no way to separate the kernel from the embroidery.
 
 That makes the secret golem unfalsifiable, not supported. It fits the evidence, but so does any secret event in anyone's life.
 
-So there are two pictures. In one, a legend about a rabbi in Chelm drifted to a more famous rabbi who had met an occultist emperor, and a storyteller wrote it up in 1909 with the period's standard fictional frame. In the other, the event happened, left no trace, and the only story about it is fiction. The first explains everything without extra assumptions. The second needs extra assumptions to explain why there's nothing to see.
+So there are two pictures. In one, a legend about a rabbi in Chelm drifted to a more famous rabbi who had met an occultist emperor, and a storyteller wrote it up in 1909 with the period's standard fictional frame. In the other, the event happened, left no trace beyond a rumor nobody can date, and the only written account of it is fiction. The first explains everything without extra assumptions. The second needs extra assumptions to explain why there's nothing to see.
 
 History doesn't prove negatives; it ranks explanations. The first one ranks higher.
 
