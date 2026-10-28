@@ -1,7 +1,8 @@
 ---
 date: 2026-10-28T00:00:00-05:00
 title: "The Golem Nobody Saw"
-tags: [judaism, philosophy]
+tags: [ai-generated, judaism, philosophy]
+ai_conversation_url: https://claude.ai/share/3b454b95-19fb-423e-9265-5228d48489f9
 ---
 
 A friend sent me a podcast clip claiming the Golem of Prague story is false. I went and found the source. It's Rabbi Aubrey Hersh on *History for the Curious*, episode 55, the second of two episodes on the Maharal. The argument is good. It also doesn't prove what most people will assume it proves, and the gap between those two things turned out to be more interesting than the golem.
