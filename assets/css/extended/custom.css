@@ -7,7 +7,7 @@
   border-radius: 4px;
 }
 
-.dark .ai-disclaimer {
+[data-theme="dark"] .ai-disclaimer {
   background-color: #1a2a3a;
   border-left-color: #5a9ae2;
 }
@@ -25,7 +25,7 @@
   border-radius: 4px;
 }
 
-.dark .in-review-disclaimer {
+[data-theme="dark"] .in-review-disclaimer {
   background-color: #3a2a1a;
   border-left-color: #ffb74d;
 }
@@ -44,7 +44,7 @@
   letter-spacing: 0.02em;
 }
 
-.dark .ai-badge {
+[data-theme="dark"] .ai-badge {
   background-color: #5a9ae2;
   color: #1a1a2e;
 }
@@ -108,7 +108,7 @@
   border-top-color: var(--secondary);
 }
 
-.dark .section-card:hover {
+[data-theme="dark"] .section-card:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -198,7 +198,7 @@
   border-radius: 4px;
 }
 
-.dark .series-nav {
+[data-theme="dark"] .series-nav {
   background-color: #1a2a3a;
 }
 
